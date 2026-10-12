@@ -1,0 +1,9 @@
+{
+  "_help": "Owner file. active=true shows the notice. type: closed | early | notice. Times are INDIA time: YYYY-MM-DDTHH:mm. Set active=false to cancel. See README.md.",
+  "active": false,
+  "type": "closed",
+  "title": "",
+  "message": "",
+  "startsAt": "",
+  "reopensAt": ""
+}

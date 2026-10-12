@@ -1,0 +1,24 @@
+{
+  "name": "big-boss-parlour",
+  "private": true,
+  "version": "1.0.0",
+  "description": "BIG BOSS PARLOUR - cinematic 3D website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host --port 4173",
+    "test": "node scripts/test-status.mjs",
+    "announce": "node scripts/announce.mjs",
+    "announce:clear": "node scripts/announce.mjs clear"
+  },
+  "dependencies": {
+    "@fontsource/bebas-neue": "^5.1.0",
+    "@fontsource/cormorant-garamond": "^5.1.0",
+    "gsap": "^3.12.5",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
