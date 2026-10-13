@@ -18,14 +18,17 @@ const at = (s) => {
 const ev = (ann, s) => evaluateStatus(ann, at(s));
 
 console.log('Business details');
-const expectedPrices = { haircut: 49, beard: 50, combo: 99, facial: 100, scrubcut: 149, massage: 499, spa: 500, bridalfacial: 1499, bridalpkg: 2000 };
+const expectedPrices = { haircut: 49, combo: 99, scrubcut: 149, massage: 499, bridalfacial: 1499, bridalpkg: 2000 };
 const prices = Object.fromEntries(business.services.map((s) => [s.id, s.price]));
 for (const [id, price] of Object.entries(expectedPrices)) {
   check(`price ${id} = Rs ${price}`, prices[id] === price, `got ${prices[id]}`);
 }
-check('exactly 9 services, no duplicate ids', business.services.length === 9 && new Set(business.services.map((s) => s.id)).size === 9);
-check('owner name', business.owner.name === 'Sk Abdul Majid');
-check('reel link is clean (no tracking text)', business.social.reelUrl === 'https://www.instagram.com/reel/DTZPblQj7WC/');
+check('exactly 6 services, no duplicate ids', business.services.length === 6 && new Set(business.services.map((s) => s.id)).size === 6);
+check('old services are gone (beard, spa, facial)', !('beard' in prices) && !('spa' in prices) && !('facial' in prices));
+check('owner name', business.owner.name === 'Sayed Abdul Majid');
+check('owner reel link is clean', business.social.reelUrl === 'https://www.instagram.com/reel/DTZPblQj7WC/');
+check('featured reel link is clean', business.social.featuredReelUrl === 'https://www.instagram.com/reel/Dd3VAknRjPf/');
+check('Instagram profile link and handle', business.social.profileUrl === 'https://www.instagram.com/bigboss.21__/' && business.social.handle === '@bigboss.21__');
 check('hours 9:00 to 22:00', business.hours.openMinutes === 540 && business.hours.closeMinutes === 1320);
 check('timezone is Asia/Kolkata', business.timezone === 'Asia/Kolkata');
 check('tel link', telUrl() === 'tel:+919937722001', telUrl());

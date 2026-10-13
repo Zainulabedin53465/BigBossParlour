@@ -4,6 +4,7 @@ import '@fontsource/cormorant-garamond/500-italic.css';
 import './styles/main.css';
 import './styles/photos.css';
 import './styles/order.css';
+import './styles/social.css';
 
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { bindBusiness } from './lib/bind.js';
@@ -11,6 +12,7 @@ import { initNav } from './lib/nav.js';
 import { initStatusUi } from './lib/statusUi.js';
 import { initPhotos } from './lib/photos.js';
 import { initOrder } from './lib/order.js';
+import { initTilt } from './lib/tilt.js';
 import { initAnimations } from './animations.js';
 
 const html = document.documentElement;
@@ -50,7 +52,7 @@ async function startHero() {
 
 async function boot() {
   bindBusiness();
-  cleanups.push(initNav(), initStatusUi(), initPhotos(), initOrder());
+  cleanups.push(initNav(), initStatusUi(), initPhotos(), initOrder(), initTilt());
   startHero(); // loads in parallel; the page never waits for it
   await fontsReady();
   cleanups.push(initAnimations());

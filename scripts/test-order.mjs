@@ -14,6 +14,7 @@ console.log('Order message');
 check('rupee format', money(1499) === '₹1,499', money(1499));
 check('empty order gives no message and no link', buildOrderMessage([]) === '' && buildOrderUrl([]) === '');
 check('bad input does not crash', buildOrderMessage(null) === '' && buildOrderMessage('x') === '' && buildOrderMessage(undefined) === '');
+check('old removed services (saved in a browser) are ignored', pickServices(['beard', 'spa', 'facial']).length === 0 && buildOrderMessage(['beard', 'spa', 'facial']) === '');
 
 let msg = buildOrderMessage(['haircut']);
 check('single item line', msg.includes(`1. Stylish & normal cutting — ${money(49)}`), msg);
@@ -29,8 +30,8 @@ msg = buildOrderMessage(['haircut', 'haircut', 'nope']);
 check('duplicates and unknown ids are ignored', pickServices(['haircut', 'haircut', 'nope']).length === 1 && msg.includes(`Total: ${money(49)}`) && !msg.includes('2.'), msg);
 
 const allIds = business.services.map((s) => s.id);
-check('all 9 services total 4945', orderTotal(pickServices(allIds)) === 4945, String(orderTotal(pickServices(allIds))));
-check('all 9 services are listed', buildOrderMessage(allIds).split('\n').filter((l) => /^\d+\. /.test(l)).length === 9);
+check('all 6 services total 4295', orderTotal(pickServices(allIds)) === 4295, String(orderTotal(pickServices(allIds))));
+check('all 6 services are listed', buildOrderMessage(allIds).split('\n').filter((l) => /^\d+\. /.test(l)).length === 6);
 
 console.log('Customer name');
 msg = buildOrderMessage(['haircut'], '  Ali\nKhan  ');

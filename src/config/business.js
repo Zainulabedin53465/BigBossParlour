@@ -7,10 +7,15 @@ export const business = {
   tagline: 'YOUR STYLE. YOUR POWER.',
   timezone: 'Asia/Kolkata',
 
-  owner: { name: 'Sk Abdul Majid', role: 'Owner' },
+  owner: { name: 'Sayed Abdul Majid', role: 'Owner' },
 
-  // Clean link (no tracking text). Used by the owner reel cover card.
-  social: { reelUrl: 'https://www.instagram.com/reel/DTZPblQj7WC/' },
+  // Clean links (no tracking text).
+  social: {
+    reelUrl: 'https://www.instagram.com/reel/DTZPblQj7WC/',          // reel card in the owner section
+    featuredReelUrl: 'https://www.instagram.com/reel/Dd3VAknRjPf/',  // reel card at the top of the page
+    profileUrl: 'https://www.instagram.com/bigboss.21__/',
+    handle: '@bigboss.21__'
+  },
 
   phoneDisplay: '+91 99377 22001',
   phoneE164: '+919937722001',
@@ -28,12 +33,9 @@ export const business = {
   // The order here is the order on the price board (lowest to highest price).
   services: [
     { id: 'haircut', name: 'Stylish & normal cutting', price: 49 },
-    { id: 'beard', name: 'Beard shaving / grooming', price: 50 },
     { id: 'combo', name: 'Cutting + shaving', price: 99 },
-    { id: 'facial', name: 'Facial', price: 100 },
     { id: 'scrubcut', name: 'Facial scrub + cutting', price: 149 },
     { id: 'massage', name: 'Body massage (per hour)', price: 499 },
-    { id: 'spa', name: 'Hair spa', price: 500 },
     { id: 'bridalfacial', name: 'Bridal facial (wedding special)', price: 1499 },
     { id: 'bridalpkg', name: 'Special bridal package', price: 2000 }
   ],

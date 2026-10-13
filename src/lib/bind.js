@@ -12,6 +12,12 @@ function span(className, text) {
   return node;
 }
 
+function openInNewTab(el, url) {
+  el.href = url;
+  el.target = '_blank';
+  el.rel = 'noopener noreferrer';
+}
+
 // Builds the big price board (scene 7) and the small price list (scene 10) from the config.
 function renderPriceLists() {
   const board = document.getElementById('price-board');
@@ -61,7 +67,8 @@ export function bindBusiness() {
     phone: business.phoneDisplay,
     hours: `${business.hours.openLabel}–${business.hours.closeLabel}`,
     ownerName: business.owner.name,
-    ownerRole: business.owner.role
+    ownerRole: business.owner.role,
+    handle: business.social.handle
   };
   all('[data-bind]').forEach((el) => {
     const v = values[el.dataset.bind];
@@ -74,15 +81,11 @@ export function bindBusiness() {
     const message = s
       ? `Hello ${business.name.replace(/\b(\w)(\w*)/g, (m, a, b) => a + b.toLowerCase())}! I would like to enquire about ${s.name.toLowerCase()} (₹${s.price}).`
       : undefined;
-    el.href = whatsappUrl(message);
-    el.target = '_blank';
-    el.rel = 'noopener noreferrer';
+    openInNewTab(el, whatsappUrl(message));
   });
-  all('[data-reel]').forEach((el) => {
-    el.href = business.social.reelUrl;
-    el.target = '_blank';
-    el.rel = 'noopener noreferrer';
-  });
+  all('[data-reel]').forEach((el) => openInNewTab(el, business.social.reelUrl));
+  all('[data-reel-featured]').forEach((el) => openInNewTab(el, business.social.featuredReelUrl));
+  all('[data-ig-profile]').forEach((el) => openInNewTab(el, business.social.profileUrl));
 
   const year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
