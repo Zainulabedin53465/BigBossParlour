@@ -40,6 +40,20 @@ export const business = {
     { id: 'bridalpkg', name: 'Special bridal package', price: 2000 }
   ],
 
+  // Live counter + leaderboard. apiUrl '' = same site (npm run live). If the website is hosted somewhere
+  // else (like GitHub Pages), put the address of your live server here, e.g. 'https://bigboss-live.onrender.com'.
+  live: { apiUrl: '', pingMs: 15000 },
+
+  // BigBoss Premium offer. Edit the perks to match what you really give members.
+  premium: {
+    name: 'BigBoss Premium',
+    perks: [
+      'Fast, priority cutting: premium customers are served first',
+      'Your name on the live website leaderboard',
+      'Every order the owner accepts moves you up the board'
+    ]
+  },
+
   // Owner notice file (see README.md). Fetched live, so no rebuild is needed to read it.
   announcementUrl: 'announcement.json',
   announcementRefreshMs: 120000

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Owner — BIG BOSS PARLOUR</title>
+<style>
+  :root{--bg:#050505;--panel:#100e0a;--gold:#d4af37;--hi:#f5dc8e;--text:#efe9da;--muted:#b9b09b;--ok:#3ecf8e;--bad:#ff6a5c}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;padding:1rem}
+  main{max-width:860px;margin:0 auto;display:grid;gap:1.4rem}
+  h1{margin:0;font:400 2rem/1 Impact,'Arial Narrow',sans-serif;letter-spacing:.14em;color:var(--gold)}
+  h2{margin:0 0 .6rem;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+  .bar{display:flex;gap:.8rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .muted{color:var(--muted);font-size:.85rem}
+  .card{border:1px solid rgba(212,175,55,.35);border-radius:14px;background:var(--panel);padding:1rem}
+  .card+.card{margin-top:.7rem}
+  .row{display:flex;gap:.8rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .who b{font-size:1.1rem}
+  .items{margin:.4rem 0 0;padding:0;list-style:none;color:var(--muted)}
+  .total{font:700 1.4rem/1 Impact,sans-serif;color:var(--hi);letter-spacing:.05em}
+  button{min-height:44px;padding:.5rem 1.1rem;border-radius:10px;border:1px solid var(--gold);background:none;color:var(--hi);font:700 .8rem/1 inherit;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+  button.go{background:linear-gradient(135deg,#9a7a22,#f5dc8e 45%,#d4af37);color:#1a1405;border-color:transparent}
+  button.no{border-color:var(--bad);color:var(--bad)}
+  .btns{display:flex;gap:.5rem;flex-wrap:wrap}
+  .empty{color:var(--muted);padding:.4rem 0}
+  a{color:var(--hi)}
+  .tag{display:inline-block;padding:.15rem .6rem;border-radius:999px;border:1px solid var(--muted);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .tag.ok{border-color:var(--ok);color:var(--ok)}
+  dialog{background:var(--panel);color:var(--text);border:1px solid var(--gold);border-radius:14px;padding:1.4rem;max-width:380px}
+  dialog::backdrop{background:rgba(0,0,0,.85)}
+  input{width:100%;min-height:46px;margin:.7rem 0;padding:.5rem .8rem;border-radius:10px;border:1px solid rgba(212,175,55,.5);background:#14110c;color:var(--text);font:1rem inherit}
+  #msg{color:var(--bad);min-height:1.3em;margin:0}
+</style>
+</head>
+<body>
+<main>
+  <div class="bar">
+    <h1>OWNER DESK</h1>
+    <span class="muted" id="status">Connecting…</span>
+  </div>
+  <section><h2>Orders waiting for you</h2><div id="pending"></div></section>
+  <section><h2>Premium requests waiting</h2><div id="reqs"></div></section>
+  <section><h2>Premium members</h2><div id="members"></div></section>
+  <section><h2>Recent orders</h2><div id="recent"></div></section>
+  <p class="muted">Accepting an order adds its amount to that member on the public leaderboard straight away. Phone numbers are only shown here, never on the website.</p>
+</main>
+
+<dialog id="keybox">
+  <form id="keyform" method="dialog">
+    <b>Owner key</b>
+    <p class="muted">The key is printed in the terminal when the server starts.</p>
+    <input id="keyin" type="password" autocomplete="current-password" placeholder="Owner key" required>
+    <p id="msg" role="alert"></p>
+    <button class="go" type="submit">Open owner desk</button>
+  </form>
+</dialog>
+
+<script>
+(function () {
+  var key = sessionStorage.getItem('bbp-owner') || '';
+  var $ = function (id) { return document.getElementById(id); };
+  var box = $('keybox'), timer = 0, lastPending = -1;
+  var rupee = function (n) { return '\u20B9' + Number(n || 0).toLocaleString('en-IN'); };
+  var when = function (t) { return new Date(t).toLocaleString('en-IN', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' }); };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function btn(label, cls, fn) { var b = el('button', cls, label); b.type = 'button'; b.addEventListener('click', fn); return b; }
+
+  function ask(msg) {
+    $('msg').textContent = msg || '';
+    if (!box.open) box.showModal();
+    $('keyin').focus();
+  }
+  $('keyform').addEventListener('submit', function () { key = $('keyin').value.trim(); sessionStorage.setItem('bbp-owner', key); $('keyin').value = ''; load(); });
+
+  function call(path, body) {
+    return fetch(path, {
+      method: body ? 'POST' : 'GET',
+      headers: { 'X-Owner-Key': key, 'Content-Type': 'text/plain' },
+      body: body ? JSON.stringify(body) : undefined
+    }).then(function (r) {
+      return r.json().then(function (j) {
+        if (r.status === 401) { ask('Wrong key. Try again.'); throw new Error('auth'); }
+        if (r.status === 429) { ask(j.error || 'Locked for a while.'); throw new Error('locked'); }
+        if (!r.ok) throw new Error(j.error || 'Error');
+        return j;
+      });
+    });
+  }
+
+  function empty(parent, text) { parent.append(el('p', 'empty', text)); }
+
+  function orderCard(o, withButtons) {
+    var c = el('div', 'card'), top = el('div', 'row'), who = el('div', 'who');
+    who.append(el('b', null, o.name), el('div', 'muted', o.phone + ' \u00B7 ' + when(o.at)));
+    top.append(who, el('span', 'total', rupee(o.total)));
+    var ul = el('ul', 'items');
+    o.items.forEach(function (i) { ul.append(el('li', null, i.name + ' \u2014 ' + rupee(i.price))); });
+    c.append(top, ul);
+    if (withButtons) {
+      var b = el('div', 'btns');
+      b.style.marginTop = '.8rem';
+      b.append(
+        btn('Accept', 'go', function () { act('/api/owner/order', { order: o.id, action: 'accept' }); }),
+        btn('Reject', 'no', function () { act('/api/owner/order', { order: o.id, action: 'reject' }); })
+      );
+      c.append(b);
+    } else {
+      c.append(el('span', o.status === 'accepted' ? 'tag ok' : 'tag', o.status));
+    }
+    return c;
+  }
+
+  function act(path, body) { call(path, body).then(render).catch(function (e) { if (e.message !== 'auth' && e.message !== 'locked') $('status').textContent = e.message; }); }
+
+  function render(s) {
+    $('status').textContent = 'Live \u00B7 updated ' + new Date().toLocaleTimeString('en-IN');
+    var p = $('pending'), r = $('reqs'), m = $('members'), h = $('recent');
+    [p, r, m, h].forEach(function (n) { n.replaceChildren(); });
+
+    s.pending.length ? s.pending.forEach(function (o) { p.append(orderCard(o, true)); }) : empty(p, 'No orders waiting.');
+
+    var req = s.members.filter(function (x) { return x.status === 'pending'; });
+    req.length ? req.forEach(function (x) {
+      var c = el('div', 'card row'), who = el('div', 'who');
+      who.append(el('b', null, x.name), el('div', 'muted', x.phone + ' \u00B7 ' + when(x.at)));
+      var b = el('div', 'btns');
+      b.append(
+        btn('Approve', 'go', function () { act('/api/owner/member', { member: x.id, action: 'approve' }); }),
+        btn('Reject', 'no', function () { if (confirm('Reject ' + x.name + '?')) act('/api/owner/member', { member: x.id, action: 'reject' }); })
+      );
+      c.append(who, b); r.append(c);
+    }) : empty(r, 'No requests.');
+
+    var ok = s.members.filter(function (x) { return x.status === 'approved'; }).sort(function (a, b) { return b.spent - a.spent; });
+    ok.length ? ok.forEach(function (x, i) {
+      var c = el('div', 'card row'), who = el('div', 'who');
+      who.append(el('b', null, '#' + (i + 1) + ' ' + x.name), el('div', 'muted', x.phone + ' \u00B7 ' + x.orders + ' orders \u00B7 ' + rupee(x.spent)));
+      c.append(who, btn('Remove', 'no', function () { if (confirm('Remove ' + x.name + ' from Premium and the leaderboard?')) act('/api/owner/member', { member: x.id, action: 'remove' }); }));
+      m.append(c);
+    }) : empty(m, 'No premium members yet.');
+
+    s.recent.length ? s.recent.forEach(function (o) { h.append(orderCard(o, false)); }) : empty(h, 'Nothing yet.');
+
+    document.title = (s.pending.length + req.length ? '(' + (s.pending.length + req.length) + ') ' : '') + 'Owner \u2014 BIG BOSS PARLOUR';
+    lastPending = s.pending.length;
+  }
+
+  function load() {
+    if (!key) { ask(''); return; }
+    call('/api/owner/state').then(function (s) { if (box.open) box.close(); render(s); }).catch(function () {});
+  }
+  load();
+  timer = setInterval(function () { if (!document.hidden && key && !box.open) load(); }, 5000);
+})();
+</script>
+</body>
+</html>

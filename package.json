@@ -10,7 +10,10 @@
     "preview": "vite preview --host --port 4173",
     "test": "node scripts/test-status.mjs && node scripts/test-order.mjs",
     "announce": "node scripts/announce.mjs",
-    "announce:clear": "node scripts/announce.mjs clear"
+    "announce:clear": "node scripts/announce.mjs clear",
+    "live": "node server/live.js",
+    "dev:all": "node server/live.js & vite",
+    "start": "vite build && node server/live.js"
   },
   "dependencies": {
     "@fontsource/bebas-neue": "^5.1.0",

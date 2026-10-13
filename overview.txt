@@ -1,0 +1,65 @@
+=== TREE ===
+./.github/workflows/deploy.yml
+./.gitignore
+./index.html
+./overview.txt
+./package.json
+./package-lock.json
+./public/404.html
+./public/announcement.json
+./public/favicon.svg
+./public/images/owner-1.jpeg
+./public/images/owner-2.jpeg
+./public/images/owner-reel-1.jpg
+./public/images/owner-reel-2.jpg
+./public/images/shop-front.jpeg
+./README.md
+./scripts/announce.mjs
+./scripts/test-order.mjs
+./scripts/test-status.mjs
+./src/animations.js
+./src/config/business.js
+./src/config/scenes.js
+./src/lib/bind.js
+./src/lib/links.js
+./src/lib/nav.js
+./src/lib/order.js
+./src/lib/orderMessage.js
+./src/lib/photos.js
+./src/lib/state.js
+./src/lib/status.js
+./src/lib/statusUi.js
+./src/lib/tilt.js
+./src/main.js
+./src/styles/main.css
+./src/styles/order.css
+./src/styles/photos.css
+./src/styles/social.css
+./src/three/hero.js
+./vite.config.js
+
+=== package.json ===
+{
+  "name": "big-boss-parlour",
+  "private": true,
+  "version": "1.0.0",
+  "description": "BIG BOSS PARLOUR - cinematic 3D website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host --port 4173",
+    "test": "node scripts/test-status.mjs && node scripts/test-order.mjs",
+    "announce": "node scripts/announce.mjs",
+    "announce:clear": "node scripts/announce.mjs clear"
+  },
+  "dependencies": {
+    "@fontsource/bebas-neue": "^5.1.0",
+    "@fontsource/cormorant-garamond": "^5.1.0",
+    "gsap": "^3.12.5",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

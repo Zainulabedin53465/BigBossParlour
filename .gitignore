@@ -4,3 +4,9 @@ dist/
 *.log
 .env
 .env.*
+
+server/data.json
+server/data.json.tmp
+.backup-*/
+apply.sh
+apply-premium.sh

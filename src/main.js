@@ -5,6 +5,8 @@ import './styles/main.css';
 import './styles/photos.css';
 import './styles/order.css';
 import './styles/social.css';
+import './styles/pro.css';
+import './styles/premium.css';
 
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { bindBusiness } from './lib/bind.js';
@@ -13,6 +15,8 @@ import { initStatusUi } from './lib/statusUi.js';
 import { initPhotos } from './lib/photos.js';
 import { initOrder } from './lib/order.js';
 import { initTilt } from './lib/tilt.js';
+import { initLive } from './lib/live.js';
+import { initPremium } from './lib/premium.js';
 import { initAnimations } from './animations.js';
 
 const html = document.documentElement;
@@ -34,6 +38,27 @@ function hardwareProfile() {
   };
 }
 
+// Thin gold bar at the very top that shows how far down the page you are.
+function initProgress() {
+  const bar = document.getElementById('progress');
+  if (!bar) return () => {};
+  let raf = 0;
+  const paint = () => {
+    raf = 0;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = `scaleX(${max > 0 ? Math.min(1, window.scrollY / max) : 0})`;
+  };
+  const queue = () => { if (!raf) raf = requestAnimationFrame(paint); };
+  window.addEventListener('scroll', queue, { passive: true });
+  window.addEventListener('resize', queue);
+  paint();
+  return () => {
+    window.removeEventListener('scroll', queue);
+    window.removeEventListener('resize', queue);
+    if (raf) cancelAnimationFrame(raf);
+  };
+}
+
 async function startHero() {
   const canvas = document.getElementById('hero-canvas');
   const { allowed, lite } = hardwareProfile();
@@ -52,7 +77,7 @@ async function startHero() {
 
 async function boot() {
   bindBusiness();
-  cleanups.push(initNav(), initStatusUi(), initPhotos(), initOrder(), initTilt());
+  cleanups.push(initNav(), initStatusUi(), initPhotos(), initOrder(), initTilt(), initLive(), initPremium(), initProgress());
   startHero(); // loads in parallel; the page never waits for it
   await fontsReady();
   cleanups.push(initAnimations());

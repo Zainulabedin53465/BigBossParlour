@@ -1,0 +1,1330 @@
+=================== FILE: ./index.html ===================
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BIG BOSS PARLOUR — Haircut, Facial, Massage &amp; Bridal | Open 9 AM–10 PM</title>
+  <meta name="description" content="BIG BOSS PARLOUR: cutting ₹49, cutting + shaving ₹99, facial scrub + cutting ₹149, body massage ₹499/hour, bridal facial ₹1499, bridal package ₹2000. Open every day 9:00 AM–10:00 PM. Call or WhatsApp +91 99377 22001." />
+  <meta name="theme-color" content="#050505" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BIG BOSS PARLOUR — Your Style. Your Power." />
+  <meta property="og:description" content="Cutting ₹49 · Cutting + shaving ₹99 · Facial scrub + cutting ₹149 · Bridal packages. Open every day 9:00 AM–10:00 PM." />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HairSalon","name":"BIG BOSS PARLOUR","telephone":"+919937722001","sameAs":["https://www.instagram.com/bigboss.21__/"],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"22:00"}}
+  </script>
+  <noscript><style>.loader{display:none!important}</style></noscript>
+</head>
+<body>
+  <!-- Local SVG art library (no external images) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-scissors" viewBox="0 0 200 200">
+        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="55" cy="152" r="23"/><circle cx="145" cy="152" r="23"/>
+          <path d="M66 134 L152 16 L160 22 L77 144 Z" fill="currentColor" fill-opacity=".1"/>
+          <path d="M134 134 L48 16 L40 22 L123 144 Z" fill="currentColor" fill-opacity=".1"/>
+          <circle cx="100" cy="88" r="5" fill="currentColor"/>
+        </g>
+      </symbol>
+      <symbol id="i-razor" viewBox="0 0 260 110">
+        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 46 Q14 36 28 34 L176 24 Q196 24 196 38 L196 46 Q196 58 176 56 L28 62 Q14 62 14 46 Z" fill="currentColor" fill-opacity=".1"/>
+          <path d="M30 41 L172 31 M30 55 L172 47" opacity=".6"/>
+          <circle cx="200" cy="44" r="6" fill="currentColor"/>
+          <path d="M204 48 L248 84 Q254 92 246 96 L242 98 Q234 100 228 94 L194 58 Z" fill="currentColor" fill-opacity=".1"/>
+        </g>
+      </symbol>
+      <symbol id="i-clipper" viewBox="0 0 120 240">
+        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M28 10V3M38 10V3M48 10V3M58 10V3M68 10V3M78 10V3M88 10V3M98 10V3"/>
+          <rect x="20" y="10" width="80" height="46" rx="8"/>
+          <rect x="26" y="56" width="68" height="168" rx="30" fill="currentColor" fill-opacity=".1"/>
+          <circle cx="60" cy="96" r="8"/>
+          <path d="M44 140h32M44 156h32M44 172h32"/>
+        </g>
+      </symbol>
+      <symbol id="i-comb" viewBox="0 0 260 90">
+        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="6" y="8" width="248" height="30" rx="8" fill="currentColor" fill-opacity=".1"/>
+          <path d="M18 38v40M34 38v40M50 38v40M66 38v40M82 38v40M98 38v40M114 38v40M130 38v40M146 38v40M162 38v40M178 38v40M194 38v40M210 38v40M226 38v40M242 38v40"/>
+        </g>
+      </symbol>
+      <symbol id="i-bottle" viewBox="0 0 120 220">
+        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="48" y="4" width="26" height="14" rx="4"/>
+          <path d="M74 10h26a6 6 0 0 1 6 6"/>
+          <rect x="44" y="18" width="34" height="18" rx="3"/>
+          <rect x="24" y="36" width="74" height="176" rx="20" fill="currentColor" fill-opacity=".1"/>
+          <rect x="38" y="90" width="46" height="70" rx="8"/>
+          <path d="M46 112h30M46 128h30M46 144h18"/>
+        </g>
+      </symbol>
+      <symbol id="i-drop" viewBox="0 0 60 80">
+        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M30 6C30 6 8 36 8 52a22 22 0 0 0 44 0C52 36 30 6 30 6Z" fill="currentColor" fill-opacity=".12"/>
+        </g>
+      </symbol>
+      <symbol id="i-mirror" viewBox="0 0 140 240">
+        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="70" cy="84" rx="54" ry="72" fill="currentColor" fill-opacity=".08"/>
+          <ellipse cx="70" cy="84" rx="44" ry="62"/>
+          <rect x="62" y="156" width="16" height="74" rx="8"/>
+          <path d="M100 40l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="loader" id="loader" role="status" aria-label="Loading BIG BOSS PARLOUR">
+    <p class="loader__mark" data-bind="name">BIG BOSS PARLOUR</p>
+    <span class="loader__line"></span>
+  </div>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="alert-bar" id="alert-bar" role="status" hidden>
+      <strong id="alert-label"></strong>
+      <span id="alert-text"></span>
+      <a href="#scene-9">Details</a>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#scene-1" data-bind="name">BIG BOSS PARLOUR</a>
+      <div class="nav__links">
+        <a href="#scene-7">Prices</a>
+        <a href="#scene-8">Visit</a>
+        <a href="#scene-9">Live status</a>
+      </div>
+      <a class="status-pill" href="#scene-9" data-status-tone="neutral">
+        <span class="sr-only">Parlour status: </span>
+        <span class="badge" data-status-badge>CHECKING…</span>
+      </a>
+      <button class="menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="All scenes" hidden>
+    <ol class="menu__list" id="menu-list"></ol>
+    <div class="menu__actions">
+      <a class="btn btn--gold" data-tel>Call now</a>
+      <a class="btn btn--ghost" data-wa>WhatsApp</a>
+    </div>
+  </nav>
+
+  <nav class="rail" id="rail" aria-label="Scene dots"></nav>
+
+  <main id="main">
+
+    <!-- SCENE 01 — THE MOVIE INTRO -->
+    <section class="scene scene--intro" id="scene-1" aria-labelledby="s1-title">
+      <div class="scene__bg" aria-hidden="true">
+        <div class="beam"></div>
+        <div class="dust"></div>
+      </div>
+      <div class="hero-fallback" aria-hidden="true">
+        <svg class="art" viewBox="0 0 200 200"><use href="#i-scissors"/></svg>
+      </div>
+      <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Reel cover at the top of the page (hides itself if the cover file is missing) -->
+      <a class="reel-top tilt" data-tilt data-hide-if-missing data-reel-featured href="https://www.instagram.com/reel/Dd3VAknRjPf/" aria-label="Watch our Instagram reel (opens in a new tab)">
+        <span class="reel-top__thumb">
+          <img src="images/owner-reel-1.jpg" alt="" width="56" height="100" decoding="async" />
+          <span class="reel-top__play" aria-hidden="true"></span>
+        </span>
+        <span class="reel-top__text"><b>Watch our reel</b><small>on Instagram</small></span>
+      </a>
+
+      <div class="intro">
+        <p class="eyebrow">Barber &amp; grooming parlour</p>
+        <h1 class="display display--xl split" id="s1-title">BIG BOSS PARLOUR</h1>
+        <p class="tagline" data-bind="tagline">YOUR STYLE. YOUR POWER.</p>
+        <p class="lede">Precision cuts. Sharp details. Everyday confidence.</p>
+        <div class="actions">
+          <a class="btn btn--gold" href="#scene-2">Explore the experience</a>
+          <a class="btn btn--ghost" data-wa>Book on WhatsApp</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#scene-2" aria-label="Scroll to the next scene"><span aria-hidden="true"></span>Scroll</a>
+    </section>
+
+    <!-- SCENE 02 — ENTER THE WORLD OF BIG BOSS (shop photo + owner) -->
+    <section class="scene scene--world" id="scene-2" aria-labelledby="s2-title">
+      <div class="scene__bg" aria-hidden="true">
+        <div class="arch arch--a" data-depth="0.15"></div>
+        <div class="arch arch--b" data-depth="0.3"></div>
+        <div class="floor-glow"></div>
+        <div class="dust"></div>
+      </div>
+      <div class="grid-2">
+        <div class="copy">
+          <p class="eyebrow" data-reveal>02 — Enter the world</p>
+          <h2 class="display display--l split" id="s2-title">MORE THAN A HAIRCUT.</h2>
+          <p class="lede" data-reveal>Your neighbourhood destination for fresh cuts and personal grooming.</p>
+          <ul class="chips" data-reveal>
+            <li>Cutting</li><li>Shaving</li><li>Facial scrub</li><li>Body massage</li><li>Bridal</li>
+          </ul>
+        </div>
+        <div class="art-stage art-stage--world">
+          <div class="shop-wrap">
+            <figure class="photo photo--shop">
+              <img src="images/shop-front.jpeg" alt="The BIG BOSS PARLOUR barber shop" loading="lazy" decoding="async" />
+            </figure>
+            <svg class="art art--w-scissors" data-depth="0.4" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-scissors"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="owner" id="owner" aria-labelledby="owner-title">
+        <p class="eyebrow" data-reveal>Meet the owner</p>
+        <h3 class="owner__name" id="owner-title" data-reveal><span data-bind="ownerName">Sayed Abdul Majid</span><small data-bind="ownerRole">Owner</small></h3>
+        <div class="owner__gallery">
+          <figure class="photo photo--owner">
+            <img src="images/owner-1.jpeg" alt="Sayed Abdul Majid, owner of BIG BOSS PARLOUR" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="photo photo--owner">
+            <img src="images/owner-2.jpeg" alt="Sayed Abdul Majid, owner of BIG BOSS PARLOUR, second photo" loading="lazy" decoding="async" />
+          </figure>
+          <a class="photo photo--owner photo--reel" data-reel href="https://www.instagram.com/reel/DTZPblQj7WC/" aria-label="Watch Sayed Abdul Majid's video on Instagram (opens in a new tab)">
+            <img src="images/owner-reel-2.jpg" alt="" loading="lazy" decoding="async" data-optional />
+            <span class="photo__play" aria-hidden="true"></span>
+            <span class="photo__cap" aria-hidden="true">Watch on Instagram</span>
+          </a>
+        </div>
+
+        <!-- Instagram profile card with 3D effect -->
+        <a class="ig-card tilt" data-tilt data-ig-profile href="https://www.instagram.com/bigboss.21__/" aria-label="Follow BIG BOSS PARLOUR on Instagram, @bigboss.21__ (opens in a new tab)">
+          <span class="ig-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="36" height="36" rx="11"/><circle cx="24" cy="24" r="8.5"/><circle cx="34.5" cy="13.5" r="1.8" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <span class="ig-card__body">
+            <small>Follow on Instagram</small>
+            <b data-bind="handle">@bigboss.21__</b>
+            <span class="ig-card__cta">Open profile →</span>
+          </span>
+        </a>
+      </div>
+      <span class="ghost-num" aria-hidden="true">02</span>
+    </section>
+
+    <!-- SCENE 03 — THE HAIRCUT EXPERIENCE -->
+    <section class="scene scene--haircut" id="scene-3" aria-labelledby="s3-title">
+      <div class="scene__bg" aria-hidden="true"><div class="sweep"></div><div class="dust"></div></div>
+      <div class="grid-2">
+        <div class="copy">
+          <p class="eyebrow" data-reveal>03 — The haircut</p>
+          <h2 class="display display--l split" id="s3-title">OWN YOUR LOOK.</h2>
+          <p class="lede" data-reveal>Precision cuts. Sharp details. A fresh finish you can feel the moment you leave the chair.</p>
+          <p class="price-tag" data-reveal>
+            <span class="price-tag__name" data-service-name="haircut"></span>
+            <span class="price-tag__dash" aria-hidden="true">—</span>
+            <span class="price-tag__amt gold-text"><span class="rupee">₹</span><span data-price="haircut"></span></span>
+          </p>
+          <div class="actions" data-reveal>
+            <a class="btn btn--gold" data-wa data-wa-service="haircut">Book on WhatsApp</a>
+          </div>
+        </div>
+        <div class="art-stage" aria-hidden="true">
+          <div class="reveal-frame">
+            <div class="art-inner">
+              <svg class="art art--f-scissors" viewBox="0 0 200 200"><use href="#i-scissors"/></svg>
+              <svg class="art art--f-clipper" viewBox="0 0 120 240"><use href="#i-clipper"/></svg>
+              <svg class="art art--f-comb" viewBox="0 0 260 90"><use href="#i-comb"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="ghost-num" aria-hidden="true">03</span>
+    </section>
+
+    <!-- SCENE 04 — CUTTING + SHAVING -->
+    <section class="scene scene--beard" id="scene-4" aria-labelledby="s4-title">
+      <div class="scene__bg" aria-hidden="true">
+        <div class="marquee marquee--top"><div class="marquee__track">
+          <span>SHARP LINES</span><span>·</span><span>CLEAN FINISH</span><span>·</span><span>SHARP LINES</span><span>·</span><span>CLEAN FINISH</span><span>·</span><span>SHARP LINES</span><span>·</span><span>CLEAN FINISH</span><span>·</span>
+        </div></div>
+        <div class="marquee marquee--bottom"><div class="marquee__track">
+          <span>CLEAN FINISH</span><span>·</span><span>SHARP LINES</span><span>·</span><span>CLEAN FINISH</span><span>·</span><span>SHARP LINES</span><span>·</span><span>CLEAN FINISH</span><span>·</span><span>SHARP LINES</span><span>·</span>
+        </div></div>
+        <div class="gleam"></div>
+        <div class="dust"></div>
+      </div>
+      <div class="grid-2 grid-2--flip">
+        <div class="art-stage" aria-hidden="true">
+          <svg class="art art--razor" data-slide="left" viewBox="0 0 260 110"><use href="#i-razor"/></svg>
+          <svg class="art art--b-comb" data-slide="right" viewBox="0 0 260 90"><use href="#i-comb"/></svg>
+        </div>
+        <div class="copy">
+          <p class="eyebrow" data-reveal>04 — Cutting + shaving</p>
+          <h2 class="display display--l split" id="s4-title">SHARP LINES. CLEAN FINISH.</h2>
+          <p class="lede" data-reveal>Careful detailing with the right tools, finished clean.</p>
+          <p class="price-tag" data-reveal>
+            <span class="price-tag__name" data-service-name="combo"></span>
+            <span class="price-tag__dash" aria-hidden="true">—</span>
+            <span class="price-tag__amt gold-text"><span class="rupee">₹</span><span data-price="combo"></span></span>
+          </p>
+          <div class="actions" data-reveal>
+            <a class="btn btn--gold" data-wa data-wa-service="combo">Book on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <span class="ghost-num" aria-hidden="true">04</span>
+    </section>
+
+    <!-- SCENE 05 — BODY MASSAGE (warm spa lighting) -->
+    <section class="scene scene--spa" id="scene-5" aria-labelledby="s5-title">
+      <div class="scene__bg" aria-hidden="true"><div class="warm-glow"></div><div class="dust"></div></div>
+      <div class="grid-2">
+        <div class="copy">
+          <p class="eyebrow" data-reveal>05 — Body massage</p>
+          <h2 class="display display--l split" id="s5-title">RESET YOUR STYLE.</h2>
+          <p class="lede" data-reveal>Slow down. Warm light, steady hands and a little time for yourself.</p>
+          <p class="price-tag" data-reveal>
+            <span class="price-tag__name" data-service-name="massage"></span>
+            <span class="price-tag__dash" aria-hidden="true">—</span>
+            <span class="price-tag__amt gold-text"><span class="rupee">₹</span><span data-price="massage"></span></span>
+          </p>
+          <div class="actions" data-reveal>
+            <a class="btn btn--gold" data-wa data-wa-service="massage">Book on WhatsApp</a>
+          </div>
+        </div>
+        <div class="art-stage art-stage--spa" aria-hidden="true">
+          <svg class="art art--bottle" viewBox="0 0 120 220"><use href="#i-bottle"/></svg>
+          <svg class="art art--drop art--drop1" viewBox="0 0 60 80"><use href="#i-drop"/></svg>
+          <svg class="art art--drop art--drop2" viewBox="0 0 60 80"><use href="#i-drop"/></svg>
+          <svg class="art art--drop art--drop3" viewBox="0 0 60 80"><use href="#i-drop"/></svg>
+        </div>
+      </div>
+      <span class="ghost-num" aria-hidden="true">05</span>
+    </section>
+
+    <!-- SCENE 06 — FACIAL SCRUB AND BRIDAL -->
+    <section class="scene scene--facial" id="scene-6" aria-labelledby="s6-title">
+      <div class="scene__bg" aria-hidden="true"><div class="studio-light"></div></div>
+      <div class="grid-2 grid-2--flip">
+        <div class="art-stage" aria-hidden="true">
+          <svg class="art art--mirror" data-depth="0.12" viewBox="0 0 140 240"><use href="#i-mirror"/></svg>
+        </div>
+        <div class="copy">
+          <p class="eyebrow" data-reveal>06 — Facial &amp; bridal</p>
+          <h2 class="display display--l split" id="s6-title">REFRESH YOUR LOOK.</h2>
+          <p class="lede" data-reveal>A calm, clean way to freshen up, in soft studio light.</p>
+          <p class="price-tag" data-reveal>
+            <span class="price-tag__name" data-service-name="scrubcut"></span>
+            <span class="price-tag__dash" aria-hidden="true">—</span>
+            <span class="price-tag__amt gold-text"><span class="rupee">₹</span><span data-price="scrubcut"></span></span>
+          </p>
+          <p class="sub-title" data-reveal>Bridal &amp; wedding</p>
+          <ul class="price-sub" data-reveal>
+            <li><span data-service-name="bridalfacial"></span><b class="gold-text"><span class="rupee">₹</span><span data-price="bridalfacial"></span></b></li>
+            <li><span data-service-name="bridalpkg"></span><b class="gold-text"><span class="rupee">₹</span><span data-price="bridalpkg"></span></b></li>
+          </ul>
+          <div class="actions" data-reveal>
+            <a class="btn btn--gold" data-wa data-wa-service="scrubcut">Book on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <span class="ghost-num" aria-hidden="true">06</span>
+    </section>
+
+    <!-- SCENE 07 — THE PRICE REVEAL (rows are built from src/config/business.js) -->
+    <section class="scene scene--prices" id="scene-7" aria-labelledby="s7-title">
+      <div class="scene__bg" aria-hidden="true"><div class="dust"></div></div>
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>07 — The price reveal</p>
+        <h2 class="display display--l split" id="s7-title">PREMIUM ATTITUDE. CLEAR PRICES.</h2>
+        <ul class="price-board" id="price-board"></ul>
+        <div class="actions" data-reveal>
+          <a class="btn btn--gold" data-wa>Ask on WhatsApp</a>
+          <a class="btn btn--ghost" data-tel>Call now</a>
+        </div>
+      </div>
+      <span class="ghost-num" aria-hidden="true">07</span>
+    </section>
+
+    <!-- SCENE 08 — YOUR VISIT, MADE SIMPLE -->
+    <section class="scene scene--visit" id="scene-8" aria-labelledby="s8-title">
+      <div class="scene__bg" aria-hidden="true">
+        <div class="tool-strip">
+          <svg class="art" viewBox="0 0 200 200"><use href="#i-scissors"/></svg>
+          <svg class="art" viewBox="0 0 260 110"><use href="#i-razor"/></svg>
+          <svg class="art" viewBox="0 0 120 240"><use href="#i-clipper"/></svg>
+          <svg class="art" viewBox="0 0 260 90"><use href="#i-comb"/></svg>
+          <svg class="art" viewBox="0 0 120 220"><use href="#i-bottle"/></svg>
+          <svg class="art" viewBox="0 0 140 240"><use href="#i-mirror"/></svg>
+          <svg class="art" viewBox="0 0 200 200"><use href="#i-scissors"/></svg>
+          <svg class="art" viewBox="0 0 260 110"><use href="#i-razor"/></svg>
+        </div>
+        <div class="dust"></div>
+      </div>
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>08 — Your visit</p>
+        <h2 class="display display--l split" id="s8-title">YOUR VISIT, MADE SIMPLE.</h2>
+        <div class="visit-grid">
+          <article class="info-card" data-reveal>
+            <h3>Days</h3>
+            <p>Open every day, subject to temporary closure announcements.</p>
+          </article>
+          <article class="info-card" data-reveal>
+            <h3>Business hours</h3>
+            <p>Business hours: <strong data-bind="hours">9:00 AM–10:00 PM</strong></p>
+          </article>
+          <article class="info-card" data-reveal>
+            <h3>Phone</h3>
+            <p>Phone: <a class="plain-link" data-tel data-bind="phone">+91 99377 22001</a></p>
+          </article>
+        </div>
+        <div class="actions" data-reveal>
+          <a class="btn btn--gold" data-tel>Call now</a>
+          <a class="btn btn--ghost" data-wa>WhatsApp booking</a>
+          <a class="btn btn--ghost" href="#scene-9">View today's status</a>
+        </div>
+        <p class="fine" data-reveal>WhatsApp opens a message that you can send. A booking is not confirmed until the parlour replies.</p>
+      </div>
+      <span class="ghost-num" aria-hidden="true">08</span>
+    </section>
+
+    <!-- SCENE 09 — LIVE PARLOUR STATUS AND CLOSURE NOTICE -->
+    <section class="scene scene--status" id="scene-9" aria-labelledby="s9-title">
+      <div class="scene__bg" aria-hidden="true"><div class="dust"></div></div>
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>09 — Live parlour status</p>
+        <h2 class="display display--l split" id="s9-title">CHECK BEFORE YOU TRAVEL.</h2>
+        <div class="status-card" id="status" data-status-tone="neutral">
+          <div class="status-card__top">
+            <span class="badge" data-status-badge>CHECKING STATUS…</span>
+            <span class="status-clock">India time <strong id="status-clock">--:--</strong></span>
+          </div>
+          <p class="status-headline" id="status-headline" role="status">Checking the latest announcement…</p>
+          <div class="status-alert" id="status-alert" hidden></div>
+          <dl class="hours-list">
+            <div><dt>Regular hours</dt><dd data-bind="hours">9:00 AM–10:00 PM</dd></div>
+            <div><dt>Days</dt><dd>Open seven days a week</dd></div>
+            <div><dt>Time zone</dt><dd>India Standard Time (IST)</dd></div>
+          </dl>
+          <p class="status-note" id="status-note">Please check the latest announcement before visiting.</p>
+          <div class="actions">
+            <a class="btn btn--gold" data-tel>Call now</a>
+            <a class="btn btn--ghost" data-wa>WhatsApp</a>
+            <button class="btn btn--ghost" id="status-refresh" type="button">Check latest notice</button>
+          </div>
+          <p class="status-meta" id="status-meta"></p>
+        </div>
+      </div>
+      <span class="ghost-num" aria-hidden="true">09</span>
+    </section>
+
+    <!-- SCENE 10 — THE FINAL CINEMATIC BRAND MOMENT -->
+    <section class="scene scene--finale" id="scene-10" aria-labelledby="s10-title">
+      <div class="finale__light" aria-hidden="true"></div>
+      <div class="scene__bg" aria-hidden="true"><div class="dust"></div></div>
+      <div class="finale">
+        <p class="eyebrow" data-reveal>10 — The final cut</p>
+        <h2 class="display display--xl split" id="s10-title">YOUR NEXT LOOK STARTS HERE.</h2>
+        <p class="finale__mark gold-text" data-bind="name">BIG BOSS PARLOUR</p>
+        <ul class="mini-prices" id="mini-prices" data-reveal></ul>
+        <p class="finale__meta" data-reveal>Open every day · <span data-bind="hours">9:00 AM–10:00 PM</span> · <a class="plain-link" data-tel data-bind="phone">+91 99377 22001</a></p>
+        <div class="actions" data-reveal>
+          <a class="btn btn--gold" data-wa>Book on WhatsApp</a>
+          <a class="btn btn--ghost" data-tel>Call now</a>
+        </div>
+        <p class="fine" data-reveal>Closures are posted in <a class="plain-link" href="#scene-9">Live status</a>. Check it before you travel.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__brand" data-bind="name">BIG BOSS PARLOUR</p>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#scene-7">Prices</a>
+        <a href="#scene-8">Visit</a>
+        <a href="#scene-9">Live status</a>
+        <a data-ig-profile href="https://www.instagram.com/bigboss.21__/">Instagram</a>
+        <a href="#top">Back to top</a>
+      </nav>
+      <p class="footer__line">Open every day · <span data-bind="hours">9:00 AM–10:00 PM</span> (IST) · <a class="plain-link" data-tel data-bind="phone">+91 99377 22001</a></p>
+      <p class="footer__legal">© <span id="year"></span> <span data-bind="name">BIG BOSS PARLOUR</span>. Opening times can change when a notice is posted.</p>
+    </div>
+  </footer>
+
+  <noscript><p style="position:fixed;bottom:0;left:0;right:0;margin:0;padding:1rem;background:#d4af37;color:#050505;text-align:center;font-family:sans-serif">Please turn on JavaScript to see prices and live status. Call +91 99377 22001.</p></noscript>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+
+=================== FILE: ./package.json ===================
+{
+  "name": "big-boss-parlour",
+  "private": true,
+  "version": "1.0.0",
+  "description": "BIG BOSS PARLOUR - cinematic 3D website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host --port 4173",
+    "test": "node scripts/test-status.mjs && node scripts/test-order.mjs",
+    "announce": "node scripts/announce.mjs",
+    "announce:clear": "node scripts/announce.mjs clear"
+  },
+  "dependencies": {
+    "@fontsource/bebas-neue": "^5.1.0",
+    "@fontsource/cormorant-garamond": "^5.1.0",
+    "gsap": "^3.12.5",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
+
+=================== FILE: ./public/404.html ===================
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Page not found | BIG BOSS PARLOUR</title>
+  <style>
+    html,body{margin:0;height:100%;background:#050505;color:#efe9da;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+    main{min-height:100%;display:grid;place-content:center;text-align:center;padding:2rem;gap:.75rem}
+    .code{margin:0;font:700 clamp(4rem,18vw,9rem)/1 Impact,'Arial Narrow',sans-serif;color:#d4af37;letter-spacing:.04em}
+    h1{margin:0;font-size:1.1rem;letter-spacing:.3em}
+    p{margin:0;color:#b4ab97}
+    a{display:inline-block;margin-top:1rem;padding:.9rem 1.6rem;background:#d4af37;color:#050505;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+    a:focus-visible{outline:3px solid #f5dc8e;outline-offset:3px}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="code">404</p>
+    <h1>PAGE NOT FOUND</h1>
+    <p>That page does not exist. The main site has everything you need.</p>
+    <div><a id="home" href="/">Back to BIG BOSS PARLOUR</a></div>
+  </main>
+  <script>
+    // On GitHub project pages the site lives at /<repo>/, so build the home link from the first path segment.
+    (function () {
+      var seg = location.pathname.split('/')[1];
+      var base = location.hostname.slice(-9) === 'github.io' && seg ? '/' + seg + '/' : '/';
+      document.getElementById('home').setAttribute('href', base);
+    })();
+  </script>
+</body>
+</html>
+
+=================== FILE: ./public/announcement.json ===================
+{
+  "_help": "Owner file. active=true shows the notice. type: closed | early | notice. Times are INDIA time: YYYY-MM-DDTHH:mm. Set active=false to cancel. See README.md.",
+  "active": false,
+  "type": "closed",
+  "title": "",
+  "message": "",
+  "startsAt": "",
+  "reopensAt": ""
+}
+
+=================== FILE: ./README.md ===================
+# BIG BOSS PARLOUR — cinematic website
+
+## Run it
+    npm install
+    npm run dev        # http://localhost:5173
+    npm test           # price, link, India-time and closure checks
+    npm run build      # production build into dist/
+
+## Change prices, phone, hours
+Edit `src/config/business.js`. The page reads everything from there.
+The page title/description in `index.html` are plain text: edit those by hand if prices change.
+
+## Announce a closure (owner guide)
+The website cannot know about an unexpected closure by itself. The owner must publish a notice.
+Notices live in ONE file: `public/announcement.json`.
+
+Option A — on GitHub, from a phone or laptop (no coding tools needed):
+1. Open the repository on github.com, open `public/announcement.json`, press the pencil (edit) icon.
+2. Set `"active": true`, choose `"type"`, fill `startsAt` / `reopensAt` (INDIA time, `YYYY-MM-DDTHH:mm`) and `message`.
+3. Commit. GitHub redeploys automatically; the notice is live in about 1-2 minutes.
+4. To cancel: set `"active": false` and commit.
+
+Option B — terminal on your laptop:
+    npm run announce -- closed "2026-10-15 14:00" "2026-10-16 09:00" "Closed for a family event."
+    npm run announce -- early  "2026-10-15 20:00" "" "Closing early today."
+    npm run announce -- notice "" "2026-10-21 00:00" "Special timing for the festival."
+    npm run announce:clear
+    git add -A && git commit -m "Update notice" && git push
+
+Types: `closed` (shows TEMPORARILY CLOSED, overrides OPEN NOW), `early` (closes early, reopens next regular opening unless a reopen time is given), `notice` (info only).
+Not instant: visitors see a change after the site redeploys (about 1-2 minutes).
+
+## Deploy to GitHub Pages
+1. Create an empty GitHub repository and push this project to the `main` branch.
+2. Repository Settings > Pages > Source: **GitHub Actions**.
+3. Every push to `main` runs tests, builds and publishes (see `.github/workflows/deploy.yml`).
+
+## Test on an Android phone (same Wi-Fi)
+Run `npm run dev`, then open the "Network" address it prints (like http://192.168.x.x:5173) on the phone.
+
+## Photos
+Put real, licensed photos in `public/images/`. The site currently uses SVG line art and a 3D scene, not photographs.
+
+=================== FILE: ./src/animations.js ===================
+// Scroll animation (GSAP + ScrollTrigger). Normal scrolling is never hijacked: no pinning, no smooth-scroll library.
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { heroState } from './lib/state.js';
+
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({ ignoreMobileResize: true });
+
+const qs = (sel, root = document) => root.querySelector(sel);
+const qsa = (sel, root = document) => [...root.querySelectorAll(sel)];
+
+function splitWords(el) {
+  const text = el.textContent.trim();
+  el.setAttribute('aria-label', text);
+  el.textContent = '';
+  const frag = document.createDocumentFragment();
+  text.split(/\s+/).forEach((word, i, arr) => {
+    const outer = document.createElement('span');
+    outer.className = 'w';
+    outer.setAttribute('aria-hidden', 'true');
+    const inner = document.createElement('span');
+    inner.className = 'wi';
+    inner.textContent = word;
+    outer.append(inner);
+    frag.append(outer);
+    if (i < arr.length - 1) frag.append(document.createTextNode(' '));
+  });
+  el.append(frag);
+  return qsa('.wi', el);
+}
+
+export function initAnimations() {
+  const mm = gsap.matchMedia();
+
+  // Only runs when the visitor has NOT asked for reduced motion. Otherwise everything simply stays visible.
+  mm.add('(prefers-reduced-motion: no-preference)', () => {
+    const small = window.matchMedia('(max-width: 760px)').matches;
+    const k = small ? 0.5 : 1; // lighter movement on phones, same look
+    const cleanups = [];
+
+    // --- Scene 1: controlled cinematic reveal ---
+    const introWords = splitWords(qs('#s1-title'));
+    gsap.timeline({ delay: 0.5, defaults: { ease: 'power3.out' } })
+      .from('.beam', { opacity: 0, scaleY: 0.2, transformOrigin: '50% 0%', duration: 1.8 }, 0)
+      .from('.intro .eyebrow', { opacity: 0, y: 14, duration: 0.8 }, 0.2)
+      .from(introWords, { yPercent: 115, rotate: 3, duration: 1.1, stagger: 0.09 }, 0.3)
+      .from('.intro .tagline', { opacity: 0, letterSpacing: small ? '0.5em' : '0.8em', duration: 1.4 }, 0.8)
+      .from('.intro .lede, .intro .actions', { opacity: 0, y: 22, duration: 0.9, stagger: 0.12 }, 1.1)
+      .from('.scroll-cue', { opacity: 0, duration: 0.8 }, 1.6);
+
+    // Scroll progress drives the 3D scissors (opening + drift)
+    ScrollTrigger.create({
+      trigger: '#scene-1', start: 'top top', end: 'bottom top', scrub: true,
+      onUpdate: (self) => { heroState.progress = self.progress; }
+    });
+    cleanups.push(() => { heroState.progress = 0; });
+
+    gsap.to('.intro', {
+      opacity: 0, y: -60 * k, ease: 'none',
+      scrollTrigger: { trigger: '#scene-1', start: '35% top', end: '85% top', scrub: true }
+    });
+
+    // --- Headline word reveals ---
+    qsa('.split').forEach((h) => {
+      if (h.id === 's1-title') return;
+      const words = splitWords(h);
+      gsap.from(words, {
+        yPercent: 115, duration: 1, stagger: 0.07, ease: 'power3.out',
+        scrollTrigger: { trigger: h, start: 'top 88%', once: true }
+      });
+    });
+
+    // --- Generic fade-up reveals ---
+    qsa('[data-reveal]').forEach((el) => {
+      gsap.from(el, {
+        opacity: 0, y: 36 * k, duration: 0.9, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 90%', once: true }
+      });
+    });
+
+    // --- Layered parallax ---
+    qsa('[data-depth]').forEach((el) => {
+      const d = parseFloat(el.dataset.depth) || 0;
+      gsap.fromTo(el, { y: d * 160 * k }, {
+        y: -d * 160 * k, ease: 'none',
+        scrollTrigger: { trigger: el.closest('.scene'), start: 'top bottom', end: 'bottom top', scrub: 0.6 }
+      });
+    });
+
+    // --- Sideways slides (scene 4) ---
+    qsa('[data-slide]').forEach((el) => {
+      const dir = el.dataset.slide === 'left' ? -1 : 1;
+      gsap.from(el, {
+        x: dir * 140 * k, opacity: 0, duration: 1.4, ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 88%', once: true }
+      });
+    });
+
+    // --- Scene 3: cinematic image reveal ---
+    qsa('.reveal-frame').forEach((frame) => {
+      gsap.fromTo(frame, { clipPath: 'inset(100% 0% 0% 0%)' }, {
+        clipPath: 'inset(0% 0% 0% 0%)', duration: 1.4, ease: 'power4.inOut',
+        scrollTrigger: { trigger: frame, start: 'top 82%', once: true }
+      });
+      const inner = qs('.art-inner', frame);
+      if (inner) {
+        gsap.fromTo(inner, { scale: 1.25 }, {
+          scale: 1, duration: 1.8, ease: 'power3.out',
+          scrollTrigger: { trigger: frame, start: 'top 82%', once: true }
+        });
+      }
+    });
+
+    // --- Scene 4: horizontal marquee motion ---
+    qsa('.marquee__track').forEach((track, i) => {
+      const forward = i % 2 === 1;
+      gsap.fromTo(track, { xPercent: forward ? -30 : 0 }, {
+        xPercent: forward ? 0 : -30, ease: 'none',
+        scrollTrigger: { trigger: track.closest('.scene'), start: 'top bottom', end: 'bottom top', scrub: 0.5 }
+      });
+    });
+
+    // --- Scene 5: lighting turns warm as you arrive ---
+    gsap.fromTo('.warm-glow', { opacity: 0 }, {
+      opacity: 1, ease: 'none',
+      scrollTrigger: { trigger: '#scene-5', start: 'top 85%', end: 'top 25%', scrub: true }
+    });
+
+    // --- Scene 7: price rows rise in with depth ---
+    gsap.from('.price-row', {
+      opacity: 0, y: 34 * k, rotateX: -22, transformOrigin: '50% 100%', stagger: 0.12, duration: 0.9, ease: 'power3.out',
+      scrollTrigger: { trigger: '.price-board', start: 'top 82%', once: true }
+    });
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      const board = qs('.price-board');
+      if (board) {
+        const rx = gsap.quickTo(board, 'rotationX', { duration: 0.6, ease: 'power3.out' });
+        const ry = gsap.quickTo(board, 'rotationY', { duration: 0.6, ease: 'power3.out' });
+        const move = (e) => {
+          const r = board.getBoundingClientRect();
+          ry(((e.clientX - r.left) / r.width - 0.5) * 6);
+          rx(-((e.clientY - r.top) / r.height - 0.5) * 5);
+        };
+        const leave = () => { rx(0); ry(0); };
+        board.addEventListener('pointermove', move);
+        board.addEventListener('pointerleave', leave);
+        cleanups.push(() => { board.removeEventListener('pointermove', move); board.removeEventListener('pointerleave', leave); });
+      }
+    }
+
+    // --- Scene 8: tools drift across, leading into booking ---
+    gsap.fromTo('.tool-strip', { xPercent: 8 }, {
+      xPercent: -30, ease: 'none',
+      scrollTrigger: { trigger: '#scene-8', start: 'top bottom', end: 'bottom top', scrub: 0.6 }
+    });
+
+    // --- Scene 10: dramatic gold light, then the wordmark ---
+    gsap.from('.finale__light', {
+      scaleY: 0, opacity: 0, transformOrigin: '50% 0%', duration: 1.8, ease: 'power3.out',
+      scrollTrigger: { trigger: '#scene-10', start: 'top 60%', once: true }
+    });
+    gsap.from('.finale__mark', {
+      opacity: 0, scale: 0.9, duration: 1.6, ease: 'power3.out',
+      scrollTrigger: { trigger: '.finale__mark', start: 'top 90%', once: true }
+    });
+
+    return () => cleanups.forEach((fn) => fn());
+  });
+
+  return () => mm.revert();
+}
+
+=================== FILE: ./src/config/business.js ===================
+// ===== BIG BOSS PARLOUR — business details =====
+// Change prices, phone, hours and owner name HERE. The whole website reads from this file.
+// (The <title>/description in index.html are plain text and must be edited by hand.)
+
+export const business = {
+  name: 'BIG BOSS PARLOUR',
+  tagline: 'YOUR STYLE. YOUR POWER.',
+  timezone: 'Asia/Kolkata',
+
+  owner: { name: 'Sayed Abdul Majid', role: 'Owner' },
+
+  // Clean links (no tracking text).
+  social: {
+    reelUrl: 'https://www.instagram.com/reel/DTZPblQj7WC/',          // reel card in the owner section
+    featuredReelUrl: 'https://www.instagram.com/reel/Dd3VAknRjPf/',  // reel card at the top of the page
+    profileUrl: 'https://www.instagram.com/bigboss.21__/',
+    handle: '@bigboss.21__'
+  },
+
+  phoneDisplay: '+91 99377 22001',
+  phoneE164: '+919937722001',
+  whatsappNumber: '919937722001',
+  whatsappMessage: 'Hello Big Boss Parlour! I would like to enquire about your services.',
+
+  // Open seven days a week. Minutes after midnight, India time.
+  hours: {
+    openMinutes: 9 * 60,
+    closeMinutes: 22 * 60,
+    openLabel: '9:00 AM',
+    closeLabel: '10:00 PM'
+  },
+
+  // The order here is the order on the price board (lowest to highest price).
+  services: [
+    { id: 'haircut', name: 'Stylish & normal cutting', price: 49 },
+    { id: 'combo', name: 'Cutting + shaving', price: 99 },
+    { id: 'scrubcut', name: 'Facial scrub + cutting', price: 149 },
+    { id: 'massage', name: 'Body massage (per hour)', price: 499 },
+    { id: 'bridalfacial', name: 'Bridal facial (wedding special)', price: 1499 },
+    { id: 'bridalpkg', name: 'Special bridal package', price: 2000 }
+  ],
+
+  // Owner notice file (see README.md). Fetched live, so no rebuild is needed to read it.
+  announcementUrl: 'announcement.json',
+  announcementRefreshMs: 120000
+};
+
+=================== FILE: ./src/config/scenes.js ===================
+// The ten cinematic scenes, used by the menu and the side dots.
+export const scenes = [
+  { id: 'scene-1', label: 'The Intro' },
+  { id: 'scene-2', label: 'Enter the World' },
+  { id: 'scene-3', label: 'Haircut' },
+  { id: 'scene-4', label: 'Beard' },
+  { id: 'scene-5', label: 'Hair Spa' },
+  { id: 'scene-6', label: 'Facial' },
+  { id: 'scene-7', label: 'Prices' },
+  { id: 'scene-8', label: 'Your Visit' },
+  { id: 'scene-9', label: 'Live Status' },
+  { id: 'scene-10', label: 'Book Now' }
+];
+
+=================== FILE: ./src/lib/bind.js ===================
+// Fills the page from src/config/business.js so prices/phone/hours live in ONE place.
+import { business } from '../config/business.js';
+import { telUrl, whatsappUrl } from './links.js';
+
+const all = (sel) => document.querySelectorAll(sel);
+const fmt = (n) => n.toLocaleString('en-IN');
+
+function span(className, text) {
+  const node = document.createElement('span');
+  if (className) node.className = className;
+  if (text != null) node.textContent = text;
+  return node;
+}
+
+function openInNewTab(el, url) {
+  el.href = url;
+  el.target = '_blank';
+  el.rel = 'noopener noreferrer';
+}
+
+// Builds the big price board (scene 7) and the small price list (scene 10) from the config.
+function renderPriceLists() {
+  const board = document.getElementById('price-board');
+  if (board) {
+    board.replaceChildren(...business.services.map((s) => {
+      const li = document.createElement('li');
+      li.className = 'price-row';
+      li.dataset.service = s.id; // the order buttons use this
+      const line = span('price-row__line');
+      line.setAttribute('aria-hidden', 'true');
+      const amt = span('price-row__amt gold-text');
+      amt.append(span('rupee', '₹'), span('', fmt(s.price)));
+      li.append(span('price-row__name', s.name), line, amt);
+      return li;
+    }));
+  }
+
+  const mini = document.getElementById('mini-prices');
+  if (mini) {
+    mini.replaceChildren(...business.services.map((s) => {
+      const li = document.createElement('li');
+      const b = document.createElement('b');
+      b.className = 'gold-text';
+      b.append(span('rupee', '₹'), span('', fmt(s.price)));
+      li.append(span('', s.name + ' '), b);
+      return li;
+    }));
+  }
+}
+
+export function bindBusiness() {
+  renderPriceLists();
+  const byId = Object.fromEntries(business.services.map((s) => [s.id, s]));
+
+  all('[data-price]').forEach((el) => {
+    const s = byId[el.dataset.price];
+    if (s) el.textContent = fmt(s.price);
+  });
+  all('[data-service-name]').forEach((el) => {
+    const s = byId[el.dataset.serviceName];
+    if (s) el.textContent = s.name;
+  });
+
+  const values = {
+    name: business.name,
+    tagline: business.tagline,
+    phone: business.phoneDisplay,
+    hours: `${business.hours.openLabel}–${business.hours.closeLabel}`,
+    ownerName: business.owner.name,
+    ownerRole: business.owner.role,
+    handle: business.social.handle
+  };
+  all('[data-bind]').forEach((el) => {
+    const v = values[el.dataset.bind];
+    if (v != null) el.textContent = v;
+  });
+
+  all('[data-tel]').forEach((el) => { el.href = telUrl(); });
+  all('[data-wa]').forEach((el) => {
+    const s = byId[el.dataset.waService];
+    const message = s
+      ? `Hello ${business.name.replace(/\b(\w)(\w*)/g, (m, a, b) => a + b.toLowerCase())}! I would like to enquire about ${s.name.toLowerCase()} (₹${s.price}).`
+      : undefined;
+    openInNewTab(el, whatsappUrl(message));
+  });
+  all('[data-reel]').forEach((el) => openInNewTab(el, business.social.reelUrl));
+  all('[data-reel-featured]').forEach((el) => openInNewTab(el, business.social.featuredReelUrl));
+  all('[data-ig-profile]').forEach((el) => openInNewTab(el, business.social.profileUrl));
+
+  const year = document.getElementById('year');
+  if (year) year.textContent = String(new Date().getFullYear());
+}
+
+=================== FILE: ./src/lib/links.js ===================
+import { business } from '../config/business.js';
+
+export function telUrl() {
+  return `tel:${business.phoneE164}`;
+}
+
+// Opens WhatsApp with a message the customer can edit and send. It does NOT confirm a booking.
+export function whatsappUrl(message = business.whatsappMessage) {
+  return `https://wa.me/${business.whatsappNumber}?text=${encodeURIComponent(message)}`;
+}
+
+=================== FILE: ./src/lib/nav.js ===================
+// Mobile menu, scene dots and "which scene am I in" tracking.
+import { scenes } from '../config/scenes.js';
+
+export function initNav() {
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  const list = document.getElementById('menu-list');
+  const rail = document.getElementById('rail');
+  const header = document.querySelector('.site-header');
+  const html = document.documentElement;
+  const cleanups = [];
+
+  scenes.forEach((scene, i) => {
+    const num = String(i + 1).padStart(2, '0');
+
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = `#${scene.id}`;
+    const n = document.createElement('span');
+    n.className = 'menu__num';
+    n.textContent = num;
+    const label = document.createElement('span');
+    label.textContent = scene.label;
+    a.append(n, label);
+    li.append(a);
+    list.append(li);
+
+    const dot = document.createElement('a');
+    dot.href = `#${scene.id}`;
+    dot.setAttribute('aria-label', `Scene ${i + 1}: ${scene.label}`);
+    dot.title = scene.label;
+    rail.append(dot);
+  });
+
+  function setOpen(open, returnFocus = true) {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    html.classList.toggle('menu-open', open);
+    if (open) menu.querySelector('a')?.focus();
+    else if (returnFocus) toggle.focus();
+  }
+  const isOpen = () => !menu.hidden;
+
+  const onToggle = () => setOpen(!isOpen());
+  const onMenuClick = (e) => { if (e.target.closest('a')) setOpen(false, false); };
+  const onKey = (e) => {
+    if (!isOpen()) return;
+    if (e.key === 'Escape') { setOpen(false); return; }
+    if (e.key !== 'Tab') return;
+    const items = [toggle, ...menu.querySelectorAll('a')];
+    const first = items[0];
+    const last = items[items.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  };
+  toggle.addEventListener('click', onToggle);
+  menu.addEventListener('click', onMenuClick);
+  document.addEventListener('keydown', onKey);
+  cleanups.push(() => {
+    toggle.removeEventListener('click', onToggle);
+    menu.removeEventListener('click', onMenuClick);
+    document.removeEventListener('keydown', onKey);
+    html.classList.remove('menu-open');
+  });
+
+  // Highlight the current scene in the menu + dots.
+  const links = [...document.querySelectorAll('#menu-list a, #rail a')];
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const href = '#' + entry.target.id;
+      links.forEach((l) => {
+        if (l.getAttribute('href') === href) l.setAttribute('aria-current', 'true');
+        else l.removeAttribute('aria-current');
+      });
+    });
+  }, { rootMargin: '-45% 0px -45% 0px' });
+  scenes.forEach((s) => { const el = document.getElementById(s.id); if (el) io.observe(el); });
+  cleanups.push(() => io.disconnect());
+
+  const onScroll = () => { header.classList.toggle('is-scrolled', window.scrollY > 40); };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  cleanups.push(() => window.removeEventListener('scroll', onScroll));
+
+  return () => cleanups.forEach((fn) => fn());
+}
+
+=================== FILE: ./src/lib/order.js ===================
+// Order builder: "Add" buttons on every service, a bottom tray, and a checkout window
+// that opens WhatsApp with the whole order already written.
+// The website never confirms a booking. The customer sends the message, the owner replies.
+import { business } from '../config/business.js';
+import { buildOrderUrl, orderTotal, pickServices, money } from './orderMessage.js';
+
+const STORE_KEY = 'bbp-order-v1';
+const byId = Object.fromEntries(business.services.map((s) => [s.id, s]));
+
+function h(tag, className, text) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text != null) node.textContent = text;
+  return node;
+}
+
+function loadState() {
+  try {
+    const data = JSON.parse(localStorage.getItem(STORE_KEY) || 'null');
+    if (data && Array.isArray(data.ids)) {
+      return {
+        ids: [...new Set(data.ids.filter((id) => typeof id === 'string' && byId[id]))],
+        name: typeof data.name === 'string' ? data.name.slice(0, 60) : ''
+      };
+    }
+  } catch (e) { /* storage blocked or broken: start with an empty order */ }
+  return { ids: [], name: '' };
+}
+
+function saveState(state) {
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
+}
+
+function makeToggle(id) {
+  const btn = h('button', 'order-btn');
+  btn.type = 'button';
+  btn.dataset.order = id;
+  btn.setAttribute('aria-pressed', 'false');
+  btn.append(h('span', 'order-btn__icon'), h('span', 'order-btn__text', 'Add'));
+  btn.querySelector('.order-btn__icon').setAttribute('aria-hidden', 'true');
+  return btn;
+}
+
+export function initOrder() {
+  const html = document.documentElement;
+  const state = loadState();
+
+  // ----- 1. Put an Add button on every priced item -----
+  function addToggle(container, id) {
+    if (!byId[id] || container.querySelector('[data-order]')) return;
+    container.append(makeToggle(id));
+  }
+  document.querySelectorAll('#price-board .price-row[data-service]').forEach((row) => addToggle(row, row.dataset.service));
+  document.querySelectorAll('.price-tag, .price-sub li').forEach((el) => {
+    const priceEl = el.querySelector('[data-price]');
+    if (priceEl) addToggle(el, priceEl.dataset.price);
+  });
+
+  // ----- 2. Bottom tray -----
+  const live = h('p', 'sr-only');
+  live.setAttribute('role', 'status');
+  live.setAttribute('aria-live', 'polite');
+
+  const tray = h('div', 'order-tray');
+  tray.hidden = true;
+  const openBtn = h('button', 'order-tray__open');
+  openBtn.type = 'button';
+  openBtn.setAttribute('aria-haspopup', 'dialog');
+  const trayCount = h('span', 'order-tray__count');
+  const trayTotal = h('span', 'order-tray__total');
+  openBtn.append(trayCount, trayTotal, h('span', 'order-tray__cta', 'View order'));
+  tray.append(openBtn);
+
+  // ----- 3. Checkout window -----
+  const dialog = document.createElement('dialog');
+  dialog.className = 'order-dialog';
+  dialog.setAttribute('aria-labelledby', 'order-title');
+  const panel = h('div', 'order-dialog__panel');
+
+  const head = h('div', 'order-dialog__head');
+  const title = h('h2', null, 'Your order');
+  title.id = 'order-title';
+  const closeBtn = h('button', 'order-close', '×');
+  closeBtn.type = 'button';
+  closeBtn.setAttribute('aria-label', 'Close order window');
+  head.append(title, closeBtn);
+
+  const list = h('ul', 'order-list');
+  const totalValue = h('strong');
+  const totalRow = h('p', 'order-total');
+  totalRow.append(h('span', null, 'Total'), totalValue);
+
+  const field = h('label', 'order-field', 'Your name (optional)');
+  const input = document.createElement('input');
+  input.type = 'text';
+  input.maxLength = 60;
+  input.autocomplete = 'name';
+  input.placeholder = 'For example: Rahul';
+  input.value = state.name;
+  field.append(input);
+
+  const note = h('p', 'order-note', 'WhatsApp opens with your order already written. Press Send there. Your order is not confirmed until the parlour replies.');
+
+  const actions = h('div', 'actions');
+  const send = h('a', 'btn btn--gold order-send', 'Send order on WhatsApp');
+  send.target = '_blank';
+  send.rel = 'noopener noreferrer';
+  const clearBtn = h('button', 'btn btn--ghost', 'Clear order');
+  clearBtn.type = 'button';
+  actions.append(send, clearBtn);
+
+  panel.append(head, list, totalRow, field, note, actions);
+  dialog.append(panel);
+  document.body.append(live, tray, dialog);
+
+  // ----- 4. Drawing -----
+  function updateLink() {
+    send.href = buildOrderUrl(state.ids, state.name) || '#';
+  }
+
+  function render(announce = false) {
+    const items = pickServices(state.ids);
+    const total = orderTotal(items);
+
+    document.querySelectorAll('[data-order]').forEach((btn) => {
+      const id = btn.dataset.order;
+      const on = state.ids.includes(id);
+      btn.setAttribute('aria-pressed', String(on));
+      btn.setAttribute('aria-label', `${on ? 'Remove' : 'Add'} ${byId[id].name} ${on ? 'from' : 'to'} your order`);
+      btn.querySelector('.order-btn__text').textContent = on ? 'Added' : 'Add';
+    });
+
+    tray.hidden = items.length === 0;
+    html.classList.toggle('has-order', items.length > 0);
+    trayCount.textContent = `${items.length} ${items.length === 1 ? 'item' : 'items'}`;
+    trayTotal.textContent = money(total);
+
+    list.replaceChildren(...items.map((s) => {
+      const li = h('li');
+      const rm = h('button', 'order-remove', '×');
+      rm.type = 'button';
+      rm.dataset.remove = s.id;
+      rm.setAttribute('aria-label', `Remove ${s.name} from your order`);
+      li.append(h('span', 'order-list__name', s.name), h('span', 'order-list__price', money(s.price)), rm);
+      return li;
+    }));
+    totalValue.textContent = money(total);
+    updateLink();
+
+    if (!items.length && dialog.open) closeDialog();
+    if (announce) {
+      live.textContent = items.length
+        ? `${items.length} ${items.length === 1 ? 'item' : 'items'} in your order. Total ${money(total)}.`
+        : 'Your order is empty.';
+    }
+  }
+
+  function openDialog() {
+    if (!pickServices(state.ids).length) return;
+    if (typeof dialog.showModal === 'function') dialog.showModal();
+    else dialog.setAttribute('open', '');
+    html.classList.add('order-open');
+  }
+
+  function closeDialog() {
+    if (typeof dialog.close === 'function') dialog.close();
+    else dialog.removeAttribute('open');
+    html.classList.remove('order-open');
+  }
+
+  function toggle(id) {
+    const i = state.ids.indexOf(id);
+    if (i >= 0) state.ids.splice(i, 1);
+    else state.ids.push(id);
+    saveState(state);
+    render(true);
+  }
+
+  // ----- 5. Events -----
+  const onDocClick = (e) => {
+    const btn = e.target.closest('[data-order]');
+    if (btn) toggle(btn.dataset.order);
+  };
+  const onListClick = (e) => {
+    const rm = e.target.closest('[data-remove]');
+    if (rm) toggle(rm.dataset.remove);
+  };
+  const onClear = () => { state.ids = []; saveState(state); render(true); };
+  const onInput = () => { state.name = input.value; saveState(state); updateLink(); };
+  const onDialogClick = (e) => { if (e.target === dialog) closeDialog(); };
+  const onDialogClose = () => html.classList.remove('order-open');
+
+  document.addEventListener('click', onDocClick);
+  list.addEventListener('click', onListClick);
+  clearBtn.addEventListener('click', onClear);
+  input.addEventListener('input', onInput);
+  openBtn.addEventListener('click', openDialog);
+  closeBtn.addEventListener('click', closeDialog);
+  dialog.addEventListener('click', onDialogClick);
+  dialog.addEventListener('close', onDialogClose);
+
+  render(false);
+
+  return () => {
+    document.removeEventListener('click', onDocClick);
+    list.removeEventListener('click', onListClick);
+    clearBtn.removeEventListener('click', onClear);
+    input.removeEventListener('input', onInput);
+    openBtn.removeEventListener('click', openDialog);
+    closeBtn.removeEventListener('click', closeDialog);
+    dialog.removeEventListener('click', onDialogClick);
+    dialog.removeEventListener('close', onDialogClose);
+    html.classList.remove('has-order', 'order-open');
+    live.remove();
+    tray.remove();
+    dialog.remove();
+  };
+}
+
+=================== FILE: ./src/lib/orderMessage.js ===================
+// Builds the WhatsApp order message. Pure functions: no page code, easy to test.
+import { business } from '../config/business.js';
+import { whatsappUrl } from './links.js';
+
+export const money = (n) => `₹${n.toLocaleString('en-IN')}`;
+
+// Keeps menu order, ignores unknown ids and duplicates.
+export function pickServices(ids) {
+  const wanted = new Set(Array.isArray(ids) ? ids : []);
+  return business.services.filter((s) => wanted.has(s.id));
+}
+
+export function orderTotal(items) {
+  return items.reduce((sum, s) => sum + s.price, 0);
+}
+
+export function buildOrderMessage(ids, customerName = '') {
+  const items = pickServices(ids);
+  if (!items.length) return '';
+
+  const brand = business.name.replace(/\b(\w)(\w*)/g, (m, a, b) => a + b.toLowerCase());
+  const lines = [`Hello ${brand}! I would like to place this order:`, ''];
+  items.forEach((s, i) => lines.push(`${i + 1}. ${s.name} — ${money(s.price)}`));
+  lines.push('', `Total: ${money(orderTotal(items))}`);
+
+  const name = String(customerName || '').replace(/\s+/g, ' ').trim().slice(0, 60);
+  if (name) lines.push(`Name: ${name}`);
+
+  lines.push('', 'Please confirm availability and timing. Thank you!');
+  return lines.join('\n');
+}
+
+export function buildOrderUrl(ids, customerName = '') {
+  const message = buildOrderMessage(ids, customerName);
+  return message ? whatsappUrl(message) : '';
+}
+
+=================== FILE: ./src/lib/photos.js ===================
+// Photo helpers: hides a photo card whose optional image file is missing,
+// and lifts the "curtain" on each photo when it scrolls into view.
+// Visitors who prefer reduced motion simply see the photos right away.
+export function initPhotos() {
+  const root = document.documentElement;
+  const photos = [...document.querySelectorAll('.photo')];
+
+  photos.forEach((card) => {
+    const img = card.querySelector('img[data-optional]');
+    if (!img) return;
+    const hide = () => { card.hidden = true; };
+    img.addEventListener('error', hide, { once: true });
+    if (img.complete && img.naturalWidth === 0 && img.getAttribute('src')) hide();
+  });
+
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return () => {};
+
+  root.classList.add('photos-ready');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-in');
+      io.unobserve(entry.target);
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+  photos.forEach((card) => io.observe(card));
+
+  return () => { io.disconnect(); root.classList.remove('photos-ready'); };
+}
+
+=================== FILE: ./src/lib/state.js ===================
+// Tiny shared object: scroll animation writes it, the 3D scene reads it.
+export const heroState = { progress: 0 };
+
+=================== FILE: ./src/lib/status.js ===================
+// Opening-hours + closure-notice logic. Pure functions: no DOM, easy to test.
+// Everything is calculated in India time (Asia/Kolkata), never the visitor's time zone.
+import { business } from '../config/business.js';
+
+const TZ = business.timezone;
+const DAY_MS = 86400000;
+const KINDS = ['closed', 'early', 'notice'];
+
+const partsFormat = new Intl.DateTimeFormat('en-GB', {
+  timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit',
+  hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+});
+const stampFormat = new Intl.DateTimeFormat('en-IN', {
+  timeZone: TZ, weekday: 'short', day: 'numeric', month: 'short',
+  hour: 'numeric', minute: '2-digit', hour12: true
+});
+const clockFormat = new Intl.DateTimeFormat('en-IN', {
+  timeZone: TZ, hour: 'numeric', minute: '2-digit', hour12: true
+});
+
+const pad = (n, len = 2) => String(n).padStart(len, '0');
+const upperMeridiem = (s) => s.replace(/\b(am|pm)\b/i, (m) => m.toUpperCase());
+const cleanText = (v, max) => (typeof v === 'string' ? v.trim().slice(0, max) : '');
+
+export function istParts(date) {
+  const p = {};
+  for (const part of partsFormat.formatToParts(date)) p[par
