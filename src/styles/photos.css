@@ -1,0 +1,79 @@
+/* ===== Real photos, owner section and the extra price lists ===== */
+
+/* ----- Scene 2 layout: photo scene + owner block ----- */
+.scene--world { align-content: center; gap: clamp(3rem, 8vw, 6rem); }
+.art-stage--world { min-height: 0; }
+.shop-wrap { position: relative; width: min(100%, 520px); }
+.shop-wrap .art--w-scissors { left: -3%; top: -5%; width: min(26%, 130px); z-index: 4; pointer-events: none; }
+
+/* ----- Photo frame: sharp gold edge, matches the rest of the site ----- */
+.photo {
+  position: relative; display: block; margin: 0; overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, .4); background: #0c0a07;
+  aspect-ratio: var(--ar, 4 / 5);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .85);
+  color: inherit; text-decoration: none;
+}
+.photo img { width: 100%; height: 100%; object-fit: cover; object-position: var(--pos, 50% 50%); }
+.photo::after { /* soft vignette + thin gold inner line */
+  content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, transparent 55%, rgba(5, 5, 5, .55)), radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(5, 5, 5, .35));
+  box-shadow: inset 0 0 0 1px rgba(212, 175, 55, .25);
+}
+.photo::before { /* black curtain that lifts when the photo scrolls into view */
+  content: ''; position: absolute; inset: 0; z-index: 3; pointer-events: none;
+  background: var(--bg); transform: scaleY(0); transform-origin: 50% 100%;
+  transition: transform 1.2s cubic-bezier(.77, 0, .18, 1);
+}
+.photos-ready .photo:not(.is-in)::before { transform: scaleY(1); }
+.photos-ready .photo img { transform: scale(1.18); transition: transform 1.9s cubic-bezier(.2, .7, .2, 1); }
+.photos-ready .photo.is-in img { transform: scale(1); }
+
+/* Crop controls. If a face is cut off, change the second number of --pos (0% = top, 100% = bottom). */
+.photo--shop { --ar: 4 / 5; --pos: 50% 50%; width: 100%; }
+@media (min-width: 900px) { .photo--shop { --ar: 1 / 1; } }
+.photo--owner { --ar: 4 / 5; --pos: 50% 22%; }
+.photo--reel { --pos: 50% 35%; cursor: pointer; }
+
+/* ----- Reel cover card ----- */
+.photo__play {
+  position: absolute; z-index: 2; left: 50%; top: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px;
+  border-radius: 50%; border: 2px solid var(--gold-hi); background: rgba(5, 5, 5, .55);
+  transition: transform .3s, background .3s;
+}
+.photo__play::before {
+  content: ''; position: absolute; left: 50%; top: 50%; margin: -10px 0 0 -6px;
+  border-style: solid; border-width: 10px 0 10px 17px; border-color: transparent transparent transparent var(--gold-hi);
+}
+.photo--reel:hover { border-color: var(--gold-hi); }
+.photo--reel:hover .photo__play { transform: scale(1.08); background: rgba(212, 175, 55, .25); }
+.photo__cap {
+  position: absolute; z-index: 2; left: 0; right: 0; bottom: 0; padding: .9rem 1rem;
+  font: 700 .7rem/1.2 var(--font-body); letter-spacing: .2em; text-transform: uppercase; color: var(--gold-hi);
+}
+
+/* ----- Owner block ----- */
+.owner { width: 100%; max-width: 1240px; margin-inline: auto; }
+.owner__name { margin: .5rem 0 1.6rem; font: 400 clamp(2rem, 6.5vw, 3.6rem)/1 var(--font-display); letter-spacing: .05em; }
+.owner__name small { margin-left: .9rem; vertical-align: middle; font: 700 .75rem/1 var(--font-body); letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+.owner__gallery { display: grid; gap: clamp(.7rem, 2vw, 1.4rem); grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); max-width: 900px; }
+
+/* ----- Extra price lines inside scenes 3, 5 and 6 ----- */
+.sub-title { margin-top: 1.6rem; font: 700 .72rem/1 var(--font-body); letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+.price-sub { margin-top: .7rem; display: grid; max-width: 34rem; border-top: 1px solid rgba(212, 175, 55, .25); }
+.price-sub li {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .7rem 0;
+  border-bottom: 1px solid rgba(212, 175, 55, .25); font-size: .95rem; letter-spacing: .1em; text-transform: uppercase;
+}
+.price-sub b { font: 400 1.7rem/1 var(--font-display); letter-spacing: .03em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* ----- Price board now has 9 rows: slightly tighter, long names may wrap ----- */
+.price-row { padding: .85rem 0; }
+.price-row__name { min-width: 0; font-size: clamp(1.1rem, 3.8vw, 2rem); }
+.price-row__amt { white-space: nowrap; font-size: clamp(1.9rem, 6.5vw, 3.6rem); }
+.mini-prices { max-width: 60rem; }
+
+@media (max-width: 520px) {
+  .photo__play { width: 52px; height: 52px; margin: -26px 0 0 -26px; }
+  .owner__name small { display: block; margin: .5rem 0 0; }
+}

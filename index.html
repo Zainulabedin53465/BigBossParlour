@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>BIG BOSS PARLOUR — Haircut, Beard &amp; Hair Spa | Open 9 AM–10 PM</title>
-  <meta name="description" content="BIG BOSS PARLOUR: haircut ₹100, beard shaving / grooming ₹50, hair spa ₹500, facial ₹100. Open every day 9:00 AM–10:00 PM. Call or WhatsApp +91 99377 22001." />
+  <title>BIG BOSS PARLOUR — Haircut, Beard, Facial &amp; Bridal | Open 9 AM–10 PM</title>
+  <meta name="description" content="BIG BOSS PARLOUR: cutting ₹49, cutting + shaving ₹99, facial ₹100, hair spa ₹500, body massage ₹499/hour, bridal facial ₹1499, bridal package ₹2000. Open every day 9:00 AM–10:00 PM. Call or WhatsApp +91 99377 22001." />
   <meta name="theme-color" content="#050505" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="BIG BOSS PARLOUR — Your Style. Your Power." />
-  <meta property="og:description" content="Haircut ₹100 · Beard ₹50 · Hair spa ₹500 · Facial ₹100. Open every day 9:00 AM–10:00 PM." />
+  <meta property="og:description" content="Cutting ₹49 · Cutting + shaving ₹99 · Facial ₹100 · Hair spa ₹500 · Bridal packages. Open every day 9:00 AM–10:00 PM." />
   <meta name="twitter:card" content="summary" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"HairSalon","name":"BIG BOSS PARLOUR","telephone":"+919937722001","openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"22:00"}}
@@ -72,21 +72,6 @@
           <ellipse cx="70" cy="84" rx="44" ry="62"/>
           <rect x="62" y="156" width="16" height="74" rx="8"/>
           <path d="M100 40l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
-        </g>
-      </symbol>
-      <symbol id="i-chair" viewBox="0 0 260 300">
-        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="95" y="10" width="70" height="34" rx="14"/>
-          <rect x="78" y="50" width="104" height="120" rx="20" fill="currentColor" fill-opacity=".08"/>
-          <rect x="62" y="170" width="136" height="32" rx="14" fill="currentColor" fill-opacity=".1"/>
-          <rect x="34" y="138" width="36" height="12" rx="6"/>
-          <path d="M52 150 Q40 156 40 178 L40 206"/>
-          <rect x="190" y="138" width="36" height="12" rx="6"/>
-          <path d="M208 150 Q220 156 220 178 L220 206"/>
-          <rect x="122" y="202" width="16" height="48"/>
-          <path d="M100 232 L100 246 Q100 252 108 252 L152 252 Q160 252 160 246 L160 232"/>
-          <ellipse cx="130" cy="272" rx="72" ry="14"/>
-          <path d="M70 268 L190 276 M190 268 L70 276" opacity=".5"/>
         </g>
       </symbol>
     </defs>
@@ -157,7 +142,7 @@
       <a class="scroll-cue" href="#scene-2" aria-label="Scroll to the next scene"><span aria-hidden="true"></span>Scroll</a>
     </section>
 
-    <!-- SCENE 02 — ENTER THE WORLD OF BIG BOSS -->
+    <!-- SCENE 02 — ENTER THE WORLD OF BIG BOSS (shop photo + owner) -->
     <section class="scene scene--world" id="scene-2" aria-labelledby="s2-title">
       <div class="scene__bg" aria-hidden="true">
         <div class="arch arch--a" data-depth="0.15"></div>
@@ -174,10 +159,31 @@
             <li>Haircut</li><li>Beard</li><li>Hair spa</li><li>Facial</li>
           </ul>
         </div>
-        <div class="art-stage art-stage--world" aria-hidden="true">
-          <svg class="art art--chair" data-depth="0.1" viewBox="0 0 260 300"><use href="#i-chair"/></svg>
-          <svg class="art art--w-scissors" data-depth="0.4" viewBox="0 0 200 200"><use href="#i-scissors"/></svg>
-          <svg class="art art--w-comb" data-depth="0.25" viewBox="0 0 260 90"><use href="#i-comb"/></svg>
+        <div class="art-stage art-stage--world">
+          <div class="shop-wrap">
+            <figure class="photo photo--shop">
+              <img src="images/shop-front.jpeg" alt="The BIG BOSS PARLOUR barber shop" loading="lazy" decoding="async" />
+            </figure>
+            <svg class="art art--w-scissors" data-depth="0.4" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-scissors"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="owner" id="owner" aria-labelledby="owner-title">
+        <p class="eyebrow" data-reveal>Meet the owner</p>
+        <h3 class="owner__name" id="owner-title" data-reveal><span data-bind="ownerName">Sk Abdul Majid</span><small data-bind="ownerRole">Owner</small></h3>
+        <div class="owner__gallery">
+          <figure class="photo photo--owner">
+            <img src="images/owner-1.jpeg" alt="Sk Abdul Majid, owner of BIG BOSS PARLOUR" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="photo photo--owner">
+            <img src="images/owner-2.jpeg" alt="Sk Abdul Majid, owner of BIG BOSS PARLOUR, second photo" loading="lazy" decoding="async" />
+          </figure>
+          <a class="photo photo--owner photo--reel" data-reel href="https://www.instagram.com/reel/DTZPblQj7WC/" aria-label="Watch Sk Abdul Majid's video on Instagram (opens in a new tab)">
+            <img src="images/owner-reel-2.jpg" alt="" loading="lazy" decoding="async" data-optional />
+            <span class="photo__play" aria-hidden="true"></span>
+            <span class="photo__cap" aria-hidden="true">Watch on Instagram</span>
+          </a>
         </div>
       </div>
       <span class="ghost-num" aria-hidden="true">02</span>
@@ -196,6 +202,11 @@
             <span class="price-tag__dash" aria-hidden="true">—</span>
             <span class="price-tag__amt gold-text"><span class="rupee">₹</span><span data-price="haircut"></span></span>
           </p>
+          <p class="sub-title" data-reveal>Combos</p>
+          <ul class="price-sub" data-reveal>
+            <li><span data-service-name="combo"></span><b class="gold-text"><span class="rupee">₹</span><span data-price="combo"></span></b></li>
+            <li><span data-service-name="scrubcut"></span><b class="gold-text"><span class="rupee">₹</span><span data-price="scrubcut"></span></b></li>
+          </ul>
           <div class="actions" data-reveal>
             <a class="btn btn--gold" data-wa data-wa-service="haircut">Book on WhatsApp</a>
           </div>
@@ -260,6 +271,10 @@
             <span class="price-tag__dash" aria-hidden="true">—</span>
             <span class="price-tag__amt gold-text"><span class="rupee">₹</span><span data-price="spa"></span></span>
           </p>
+          <p class="sub-title" data-reveal>Relax</p>
+          <ul class="price-sub" data-reveal>
+            <li><span data-service-name="massage"></span><b class="gold-text"><span class="rupee">₹</span><span data-price="massage"></span></b></li>
+          </ul>
           <div class="actions" data-reveal>
             <a class="btn btn--gold" data-wa data-wa-service="spa">Book on WhatsApp</a>
           </div>
@@ -290,6 +305,11 @@
             <span class="price-tag__dash" aria-hidden="true">—</span>
             <span class="price-tag__amt gold-text"><span class="rupee">₹</span><span data-price="facial"></span></span>
           </p>
+          <p class="sub-title" data-reveal>Bridal &amp; wedding</p>
+          <ul class="price-sub" data-reveal>
+            <li><span data-service-name="bridalfacial"></span><b class="gold-text"><span class="rupee">₹</span><span data-price="bridalfacial"></span></b></li>
+            <li><span data-service-name="bridalpkg"></span><b class="gold-text"><span class="rupee">₹</span><span data-price="bridalpkg"></span></b></li>
+          </ul>
           <div class="actions" data-reveal>
             <a class="btn btn--gold" data-wa data-wa-service="facial">Book on WhatsApp</a>
           </div>
@@ -298,34 +318,13 @@
       <span class="ghost-num" aria-hidden="true">06</span>
     </section>
 
-    <!-- SCENE 07 — THE PRICE REVEAL -->
+    <!-- SCENE 07 — THE PRICE REVEAL (rows are built from src/config/business.js) -->
     <section class="scene scene--prices" id="scene-7" aria-labelledby="s7-title">
       <div class="scene__bg" aria-hidden="true"><div class="dust"></div></div>
       <div class="wrap">
         <p class="eyebrow" data-reveal>07 — The price reveal</p>
         <h2 class="display display--l split" id="s7-title">PREMIUM ATTITUDE. CLEAR PRICES.</h2>
-        <ul class="price-board">
-          <li class="price-row">
-            <span class="price-row__name" data-service-name="haircut"></span>
-            <span class="price-row__line" aria-hidden="true"></span>
-            <span class="price-row__amt gold-text"><span class="rupee">₹</span><span data-price="haircut"></span></span>
-          </li>
-          <li class="price-row">
-            <span class="price-row__name" data-service-name="beard"></span>
-            <span class="price-row__line" aria-hidden="true"></span>
-            <span class="price-row__amt gold-text"><span class="rupee">₹</span><span data-price="beard"></span></span>
-          </li>
-          <li class="price-row">
-            <span class="price-row__name" data-service-name="spa"></span>
-            <span class="price-row__line" aria-hidden="true"></span>
-            <span class="price-row__amt gold-text"><span class="rupee">₹</span><span data-price="spa"></span></span>
-          </li>
-          <li class="price-row">
-            <span class="price-row__name" data-service-name="facial"></span>
-            <span class="price-row__line" aria-hidden="true"></span>
-            <span class="price-row__amt gold-text"><span class="rupee">₹</span><span data-price="facial"></span></span>
-          </li>
-        </ul>
+        <ul class="price-board" id="price-board"></ul>
         <div class="actions" data-reveal>
           <a class="btn btn--gold" data-wa>Ask on WhatsApp</a>
           <a class="btn btn--ghost" data-tel>Call now</a>
@@ -414,12 +413,7 @@
         <p class="eyebrow" data-reveal>10 — The final cut</p>
         <h2 class="display display--xl split" id="s10-title">YOUR NEXT LOOK STARTS HERE.</h2>
         <p class="finale__mark gold-text" data-bind="name">BIG BOSS PARLOUR</p>
-        <ul class="mini-prices" data-reveal>
-          <li><span data-service-name="haircut"></span> <b class="gold-text"><span class="rupee">₹</span><span data-price="haircut"></span></b></li>
-          <li><span data-service-name="beard"></span> <b class="gold-text"><span class="rupee">₹</span><span data-price="beard"></span></b></li>
-          <li><span data-service-name="spa"></span> <b class="gold-text"><span class="rupee">₹</span><span data-price="spa"></span></b></li>
-          <li><span data-service-name="facial"></span> <b class="gold-text"><span class="rupee">₹</span><span data-price="facial"></span></b></li>
-        </ul>
+        <ul class="mini-prices" id="mini-prices" data-reveal></ul>
         <p class="finale__meta" data-reveal>Open every day · <span data-bind="hours">9:00 AM–10:00 PM</span> · <a class="plain-link" data-tel data-bind="phone">+91 99377 22001</a></p>
         <div class="actions" data-reveal>
           <a class="btn btn--gold" data-wa>Book on WhatsApp</a>

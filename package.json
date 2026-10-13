@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --host --port 4173",
-    "test": "node scripts/test-status.mjs",
+    "test": "node scripts/test-status.mjs && node scripts/test-order.mjs",
     "announce": "node scripts/announce.mjs",
     "announce:clear": "node scripts/announce.mjs clear"
   },

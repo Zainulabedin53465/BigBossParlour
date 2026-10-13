@@ -18,8 +18,14 @@ const at = (s) => {
 const ev = (ann, s) => evaluateStatus(ann, at(s));
 
 console.log('Business details');
+const expectedPrices = { haircut: 49, beard: 50, combo: 99, facial: 100, scrubcut: 149, massage: 499, spa: 500, bridalfacial: 1499, bridalpkg: 2000 };
 const prices = Object.fromEntries(business.services.map((s) => [s.id, s.price]));
-check('prices 100 / 50 / 500 / 100', prices.haircut === 100 && prices.beard === 50 && prices.spa === 500 && prices.facial === 100, JSON.stringify(prices));
+for (const [id, price] of Object.entries(expectedPrices)) {
+  check(`price ${id} = Rs ${price}`, prices[id] === price, `got ${prices[id]}`);
+}
+check('exactly 9 services, no duplicate ids', business.services.length === 9 && new Set(business.services.map((s) => s.id)).size === 9);
+check('owner name', business.owner.name === 'Sk Abdul Majid');
+check('reel link is clean (no tracking text)', business.social.reelUrl === 'https://www.instagram.com/reel/DTZPblQj7WC/');
 check('hours 9:00 to 22:00', business.hours.openMinutes === 540 && business.hours.closeMinutes === 1320);
 check('timezone is Asia/Kolkata', business.timezone === 'Asia/Kolkata');
 check('tel link', telUrl() === 'tel:+919937722001', telUrl());

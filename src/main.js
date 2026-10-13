@@ -2,11 +2,15 @@ import '@fontsource/bebas-neue/400.css';
 import '@fontsource/cormorant-garamond/600.css';
 import '@fontsource/cormorant-garamond/500-italic.css';
 import './styles/main.css';
+import './styles/photos.css';
+import './styles/order.css';
 
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { bindBusiness } from './lib/bind.js';
 import { initNav } from './lib/nav.js';
 import { initStatusUi } from './lib/statusUi.js';
+import { initPhotos } from './lib/photos.js';
+import { initOrder } from './lib/order.js';
 import { initAnimations } from './animations.js';
 
 const html = document.documentElement;
@@ -46,7 +50,7 @@ async function startHero() {
 
 async function boot() {
   bindBusiness();
-  cleanups.push(initNav(), initStatusUi());
+  cleanups.push(initNav(), initStatusUi(), initPhotos(), initOrder());
   startHero(); // loads in parallel; the page never waits for it
   await fontsReady();
   cleanups.push(initAnimations());

@@ -1,0 +1,74 @@
+/* ===== Order builder: add buttons, bottom tray, checkout window ===== */
+
+/* ----- Add / Added button ----- */
+.order-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 44px; min-width: 44px; padding: .45rem .85rem;
+  border: 1px solid var(--gold); background: transparent; color: var(--gold-hi);
+  font: 700 .72rem/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase;
+  cursor: pointer; transition: background .25s, color .25s, transform .25s;
+}
+.order-btn:hover { background: rgba(212, 175, 55, .14); transform: translateY(-1px); }
+.order-btn__icon { position: relative; width: 14px; height: 14px; flex: none; transition: transform .25s; }
+.order-btn__icon::before, .order-btn__icon::after { content: ''; position: absolute; left: 50%; top: 50%; background: currentColor; }
+.order-btn__icon::before { width: 14px; height: 2px; margin: -1px 0 0 -7px; }
+.order-btn__icon::after { width: 2px; height: 14px; margin: -7px 0 0 -1px; }
+.order-btn[aria-pressed='true'] { background: var(--gold-grad); color: #1a1405; border-color: transparent; }
+.order-btn[aria-pressed='true'] .order-btn__icon { transform: rotate(45deg); } /* plus turns into a cross = tap to remove */
+
+.price-row .order-btn { flex: none; padding: .45rem .8rem; }
+.price-tag .order-btn { align-self: center; margin-left: .6rem; }
+.price-sub li { display: grid; grid-template-columns: 1fr auto auto; gap: .8rem; align-items: center; }
+@media (max-width: 520px) {
+  .price-row { gap: .6rem; }
+  .price-row .order-btn { padding: .45rem; }
+  .price-row .order-btn__text { display: none; }
+}
+
+/* ----- Bottom tray ----- */
+.order-tray {
+  position: fixed; z-index: 55; left: 0; right: 0; bottom: 0;
+  padding: .6rem var(--pad) calc(.6rem + env(safe-area-inset-bottom, 0px));
+  background: linear-gradient(0deg, rgba(5, 5, 5, .97), rgba(5, 5, 5, .82));
+  border-top: 1px solid rgba(212, 175, 55, .4);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  animation: tray-in .4s ease;
+}
+@keyframes tray-in { from { transform: translateY(100%); } }
+.order-tray__open {
+  display: flex; align-items: center; gap: 1rem; width: 100%; max-width: 760px; margin-inline: auto;
+  min-height: 52px; padding: .6rem 1.1rem; border: 0; cursor: pointer;
+  background: var(--gold-grad); color: #1a1405;
+  font: 700 .85rem/1.1 var(--font-body); letter-spacing: .12em; text-transform: uppercase;
+}
+.order-tray__total { font: 400 1.6rem/1 var(--font-display); letter-spacing: .04em; }
+.order-tray__cta { margin-left: auto; }
+html.menu-open .order-tray { display: none; }
+html.has-order .footer { padding-bottom: 6.5rem; }
+
+/* ----- Checkout window ----- */
+html.order-open { overflow: hidden; }
+.order-dialog {
+  width: min(560px, calc(100vw - 1.5rem)); max-height: calc(100vh - 1.5rem); max-height: calc(100dvh - 1.5rem);
+  padding: 0; overflow: auto; color: var(--text); background: #0b0a08; border: 1px solid rgba(212, 175, 55, .5);
+}
+.order-dialog::backdrop { background: rgba(0, 0, 0, .8); backdrop-filter: blur(3px); }
+.order-dialog__panel { display: grid; gap: 1rem; padding: clamp(1.1rem, 4vw, 1.8rem); }
+.order-dialog__head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.order-dialog__head h2 { font: 400 clamp(1.8rem, 6vw, 2.4rem)/1 var(--font-display); letter-spacing: .06em; }
+.order-close, .order-remove {
+  display: grid; place-content: center; flex: none; width: 44px; height: 44px;
+  border: 1px solid rgba(212, 175, 55, .5); background: none; color: var(--gold-hi);
+  font: 400 1.5rem/1 var(--font-body); cursor: pointer;
+}
+.order-close:hover, .order-remove:hover { background: rgba(212, 175, 55, .14); }
+.order-list { display: grid; border-top: 1px solid rgba(212, 175, 55, .3); }
+.order-list li { display: grid; grid-template-columns: 1fr auto auto; gap: .8rem; align-items: center; padding: .6rem 0; border-bottom: 1px solid rgba(212, 175, 55, .3); }
+.order-list__name { overflow-wrap: anywhere; }
+.order-list__price { font: 400 1.5rem/1 var(--font-display); letter-spacing: .03em; color: var(--gold-hi); white-space: nowrap; }
+.order-total { display: flex; align-items: baseline; justify-content: space-between; font: 700 .85rem/1 var(--font-body); letter-spacing: .2em; text-transform: uppercase; }
+.order-total strong { font: 400 2.4rem/1 var(--font-display); letter-spacing: .03em; color: var(--gold-hi); }
+.order-field { display: grid; gap: .4rem; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.order-field input { min-height: 48px; padding: .6rem .8rem; background: #14110c; color: var(--text); border: 1px solid rgba(212, 175, 55, .4); font: 1rem var(--font-body); letter-spacing: normal; text-transform: none; }
+.order-note { font-size: .85rem; color: var(--muted); }
+.order-dialog .actions { margin-top: .2rem; }
